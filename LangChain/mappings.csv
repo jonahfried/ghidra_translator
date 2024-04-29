@@ -1,3 +1,4 @@
+llm,function,placeholder,inferred
 gemini,_string_append,lVar2,new_size
 claud,_string_append,lVar2,new_capacity
 gpt4,_string_append,lVar2,new_buffer_size
@@ -1448,4 +1449,3 @@ claud,_string_utf8_char_len,local_10,char_len
 gemini,_string_utf8_char_len,param_1,character
 claud,_string_utf8_char_len,param_1,char_code
 gpt4,_string_utf8_char_len,param_1,utf8_char
-llm,function,placeholder,inferred
