@@ -1,3 +1,5 @@
 langchain_venv/
 LangChain/api_keys.txt
 LangChain/wip processing
+*.DS_Store
+.vscode/
