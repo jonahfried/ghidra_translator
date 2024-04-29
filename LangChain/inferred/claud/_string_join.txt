@@ -1,0 +1,28 @@
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+{
+  param_1: string_array,
+  param_2: string_count,
+  param_3: delimiter,
+  local_34: i,
+  local_10: result_string
+}
+
+Reasoning:
+1. param_1 -> string_array: It seems to be an array of strings based on the usage `**(undefined8 **)(param_1 + (long)local_34 * 8)` which suggests accessing elements of an array using an index.
+
+2. param_2 -> string_count: It appears to be the count or number of strings in the array. It is used in the loop condition `local_34 < param_2` and compared with 1 for validation.
+
+3. param_3 -> delimiter: It is used as a separator when appending strings in the loop, indicating it is a delimiter string.
+
+4. local_34 -> i: It is a loop variable used for iteration, typically named `i` by convention.
+
+5. local_10 -> result_string: It seems to be the resulting string that is created and appended to in the loop. It is returned at the end of the function.
+
+The function `_string_join` appears to take an array of strings (`string_array`), the count of strings (`string_count`), and a delimiter string (`delimiter`). It joins the strings in the array using the delimiter and returns the resulting concatenated string (`result_string`).
+
+The function performs error checking for null string array, invalid count, and null delimiter. It also handles memory allocation failure for the result string.
+
+The loop iterates over the strings in the array, appends each string to the `result_string`, and appends the delimiter if it's not the last string in the array.
+
+Finally, the `result_string` is returned as the joined string.

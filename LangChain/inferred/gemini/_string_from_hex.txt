@@ -1,0 +1,20 @@
+```python
+{
+  'param_1': 'string_ptr',  # Pointer to the input string object
+  'local_2b': 'char_value',  # Character value extracted from the input string
+  'local_2a': 'unknown_byte_1',  # Unknown single byte value from the input string, purpose unclear
+  'local_29': 'unknown_byte_2',  # Unknown single byte value from the input string, purpose unclear
+  'local_20': 'output_string_id',  # ID of the newly created output string
+  'local_18': 'string_data_ptr',  # Pointer to the data of the input string object
+  'local_10': 'result_string_id',  # ID of the resulting string
+}
+```
+
+## Reasoning for inferred names:
+
+* `string_ptr`: This name clearly indicates that the variable is a pointer to a string object.
+* `char_value`: This name describes the variable's purpose of holding a character value extracted from the input string.
+* `unknown_byte_1`, `unknown_byte_2`: These names reflect that the purpose of these single-byte values is unclear from the code.
+* `output_string_id`: Based on its usage in `_string_create`, this variable appears to hold the ID of a newly created string.
+* `string_data_ptr`: This name indicates that the variable points to the actual data of the string object.
+* `result_string_id`: This name reflects the final output of the function, which is the ID of the resulting string.

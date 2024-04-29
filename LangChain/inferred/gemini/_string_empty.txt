@@ -1,0 +1,18 @@
+## Inferred Variable Names and Types:
+
+```
+{
+  "param_1": "string_pointer",  # Represents a pointer to the string
+}
+```
+
+## Reasoning:
+
+* `param_1`: This is the only argument to the function and is used to access the string. Naming it `string_pointer` clearly indicates its purpose. 
+* The function checks if the string is empty by comparing the value at `param_1` with 0 (null pointer) and the value at `param_1 + 8` with 0. This suggests that `param_1` points to a memory location where the first 8 bytes represent the string length. 
+* The type of `param_1` is inferred as `long` based on the Ghidra decompilation. However, depending on the platform and architecture, it could also be `void*` or another pointer type.
+
+## Additional Notes:
+
+* The function name `_string_empty` clearly indicates its purpose. 
+* The variable `bVar1` is not directly relevant to the mapping of placeholder names, as it is an internal variable used for the boolean check. 

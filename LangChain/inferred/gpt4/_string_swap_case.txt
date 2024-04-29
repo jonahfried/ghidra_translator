@@ -1,0 +1,10 @@
+{
+  param_1 : str_ptr,
+  iVar1 : is_lower,
+  local_18 : index,
+}
+Reasoning:
+- `param_1` is a pointer to a string, so `str_ptr` is a more descriptive name.
+- `iVar1` is used to store the result of checking if a character is lowercase, so `is_lower` is a suitable name.
+- `local_18` is used as an index in a loop, so `index` is a fitting name.
+}

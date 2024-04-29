@@ -1,0 +1,18 @@
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+{
+  param_1: string_ptr,
+  iVar1: char_code,
+  local_18: index,
+}
+
+Reasoning:
+- param_1: This is a pointer to a long, but based on the context and the function name "_string_swap_case", it is actually a pointer to a string structure. Therefore, a more descriptive name would be "string_ptr".
+- iVar1: This variable is used to store the character code returned by functions like _islower, _isupper, _tolower, and _toupper. It represents the character code at a specific index in the string. Hence, "char_code" is a suitable name.
+- local_18: This variable is used as a loop counter to iterate over the characters of the string. It represents the index of the current character being processed. Therefore, "index" is an appropriate name.
+
+The function "_string_swap_case" takes a pointer to a string structure as input. It checks if the string pointer is NULL or if the string data is NULL. If either of these conditions is true, it prints an error message to stderr.
+
+If the string is valid, the function iterates over each character of the string using a loop. For each character, it checks if it is a lowercase letter using _islower. If it is not lowercase, it checks if it is an uppercase letter using _isupper. If the character is uppercase, it converts it to lowercase using _tolower. If the character is lowercase, it converts it to uppercase using _toupper.
+
+The loop continues until all characters in the string have been processed, effectively swapping the case of each letter in the string.

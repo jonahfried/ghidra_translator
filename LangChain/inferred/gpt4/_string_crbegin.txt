@@ -1,0 +1,7 @@
+{
+  param_1 : input_pointer,
+  local_10 : result_value,
+}
+Reasoning:
+- `param_1` is a pointer to a long integer, representing an input parameter.
+- `local_10` is a long integer variable storing the result value of the function.

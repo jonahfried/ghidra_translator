@@ -1,0 +1,25 @@
+Here's the mapping of placeholder names to inferred names and types, along with the reasoning:
+
+{
+  param_1: str1,
+  param_2: str2,
+}
+
+Reasoning:
+- `param_1` and `param_2` are inferred to be strings because they are being passed to a function named `_string_compare`, which suggests that the function compares two strings.
+- The names `str1` and `str2` are chosen to represent the first and second string parameters, respectively. These names are descriptive and concise, indicating that they are strings being compared.
+- The `undefined8` type is likely a placeholder for a pointer or reference to a string, as strings are typically passed by reference in C-style functions.
+
+The function `_string_is_greater` compares two strings using the `_string_compare` function and returns a boolean value indicating whether the first string is considered greater than the second string based on the comparison result.
+
+- The comparison result `iVar1` is an integer value returned by `_string_compare`.
+- The condition `0 < iVar1` checks if the comparison result is greater than 0, which would indicate that the first string is greater than the second string.
+- The function returns the boolean result of this condition.
+
+So, the inferred function signature would be:
+
+```c
+bool _string_is_greater(const char* str1, const char* str2)
+```
+
+where `const char*` is used to represent a pointer to a null-terminated string.

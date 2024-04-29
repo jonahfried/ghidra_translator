@@ -1,0 +1,13 @@
+Here's the mapping of placeholder names to inferred names and types, along with the reasoning:
+
+{
+  param_1: string_ptr,
+  local_10: capacity,
+}
+
+Reasoning:
+- param_1: This parameter is likely a pointer to a String object, based on the function name "_string_capacity" and the NULL check performed on param_1. Therefore, I inferred the name string_ptr to indicate that it is a pointer to a String.
+
+- local_10: This local variable is used to store and return the capacity of the String object. If param_1 is not NULL, local_10 is assigned the value from an offset of param_1, likely representing the capacity field of the String object. Hence, I inferred the name capacity for local_10.
+
+The function seems to retrieve the capacity of a String object. It first checks if the provided String pointer (param_1) is NULL. If it is NULL, it prints an error message to stderr and returns 0 as the capacity. If the pointer is not NULL, it retrieves the capacity value from an offset of the String object (likely the capacity field) and returns that value.

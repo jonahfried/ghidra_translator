@@ -1,0 +1,9 @@
+{
+  param_1 : string_ptr,
+}
+{
+  PTR____stderrp_10000a038 : stderr_ptr,
+} 
+
+- `param_1` is a pointer to a string object being deallocated, hence `string_ptr`.
+- `PTR____stderrp_10000a038` appears to be a pointer to `stderr`, hence `stderr_ptr`.

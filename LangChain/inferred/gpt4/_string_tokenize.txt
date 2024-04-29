@@ -1,0 +1,24 @@
+{
+  param_1 : input_string,
+  param_2 : delimiter,
+  param_3 : num_tokens,
+  pc_var1 : tokenized_string,
+  u_var2 : token,
+  local_58 : loop_counter_outer,
+  local_50 : token_index,
+  local_40 : token,
+  local_30 : num_tokens,
+  local_10 : token_array,
+}
+Reasoning:
+- `param_1` is used as the input string that is being tokenized.
+- `param_2` represents the delimiter used for tokenizing the string.
+- `param_3` is assigned the number of tokens found in the string.
+- `pcVar1` is a pointer to the tokenized string obtained using `_string_strdup`.
+- `uVar2` represents an individual token created using `_string_create`.
+- `local_58` is used as a loop counter for the outer loop.
+- `local_50` is used as the index for storing tokens in the token array.
+- `local_40` represents an individual token during tokenization.
+- `local_30` stores the total number of tokens found in the string.
+- `local_10` represents the array storing all the tokens extracted from the input string.
+}

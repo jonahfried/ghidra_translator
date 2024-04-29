@@ -1,0 +1,12 @@
+{
+  param_1: integer_value,
+  sVar1: length,
+  pvVar2: result_string,
+  local_1c: buffer_string,
+  local_10: stack_chk_guard,
+}
+- `param_1`: Descriptive name `integer_value` is used to indicate that this parameter is an integer value.
+- `sVar1`: Descriptive name `length` is used to represent the size or length of a variable, which in this case is used to store the length of a string.
+- `pvVar2`: Descriptive name `result_string` is used to represent the variable that will hold the resulting string after conversion.
+- `local_1c`: Descriptive name `buffer_string` is used to represent the buffer that stores the string data.
+- `local_10`: Descriptive name `stack_chk_guard` is used to represent a variable related to stack protection mechanisms.

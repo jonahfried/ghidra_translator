@@ -1,0 +1,6 @@
+{
+  param_1 : string_object,
+  local_10 : length,
+}
+- `param_1`: Renamed to `string_object` since the parameter seems to represent a String object.
+- `local_10`: Renamed to `length` since it appears to store the length of the string.

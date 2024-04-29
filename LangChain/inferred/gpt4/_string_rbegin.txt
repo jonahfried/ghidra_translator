@@ -1,0 +1,6 @@
+{
+  param_1 : string_ptr,
+  local_10 : result_index,
+}
+- `param_1`: Renamed to `string_ptr` since it is a pointer to a string (array of longs).
+- `local_10`: Renamed to `result_index` as it seems to be storing the index calculated in the function.

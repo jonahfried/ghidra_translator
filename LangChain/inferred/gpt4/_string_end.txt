@@ -1,0 +1,8 @@
+{
+  param_1 : input_pointer,
+  local_10 : result,
+}
+- `param_1`: Renamed to `input_pointer` as it is a pointer to the input array.
+- `local_10`: Renamed to `result` as it stores the result of the computation in the function.
+
+The renaming is based on the context and the usage of the variables in the function.

@@ -1,0 +1,32 @@
+## Mapping inferred names and types:
+
+```
+{
+  "_string_length_utf8": "string_length_utf8",
+  "param_1": "string",
+  "local_20": "utf8_char_count",
+  "local_18": "current_char",
+  "local_10": "string_length",
+}
+```
+
+## Reasoning behind inferred names:
+
+* `_string_length_utf8`: This function calculates the length of a UTF-8 string, so the name is kept as-is.
+* `param_1`: This is the input string parameter, so it is renamed to `string` for clarity.
+* `local_20`: This variable keeps track of the number of UTF-8 characters in the string, hence the name `utf8_char_count`.
+* `local_18`: This variable represents the current character being processed, so it is renamed to `current_char`.
+* `local_10`: This variable stores the final string length, so it is renamed to `string_length`.
+
+## Additional notes:
+
+* The original placeholder names are not very descriptive, so they are replaced with more meaningful names.
+* The inferred types (e.g., `char*`, `long`) are preserved in the mapping.
+* The inferred names are all in snake_case for consistency.
+
+## Contextual reasoning:
+
+* The function name `_string_length_utf8` indicates that it calculates the length of a string based on UTF-8 encoding.
+* The loop iterates over each character in the string and checks if it is a multi-byte UTF-8 character.
+* The variable `local_20` is incremented only for non-continuation bytes (the first byte of a multi-byte character).
+* This information helps to infer the purpose of each variable and assign relevant names.

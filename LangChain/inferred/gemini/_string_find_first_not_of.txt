@@ -1,0 +1,42 @@
+Here is the mapping of placeholder variable names to descriptive names and their explanation:
+
+
+```python 
+{
+
+"param_1":"string_object",  # This variable points to the beginning of the String object in memory
+
+"param_2":"buffer",    # Buffer containing characters to compare against
+
+"param_3":"pos" ,        # Position within the string object to start searching
+
+"local_38":"index",      # Index used for iteration within the String object
+
+"local_c" : "result" ,    # Stores final return value (index or -1 if not found)
+
+
+}
+
+```
+
+
+
+### Reasoning:
+
+
+* **`string_object`**: This name is chosen as it accurately describes the purpose of the variable which points to the starting memory address of an object of type String.
+
+*  **`buffer`**: The name `buffer`  is selected as this variable holds the array of chars that need be compared against.
+
+ * **`pos`**:  The variable is used to indicate  the index at  which  the  searching should begin within the  `string_object` .  Therefore the name  `pos`  is concise and accurately reflects  its role.
+
+
+*   **`index`**: This variable acts  as an iterator during  the  comparison loop, traversing  the  `string object`. The name  `index` is  concise and commonly  used  in such scenarios.
+
+
+ * **`result`**: The name  ‘ result’  clearly conveys that  this  variable stores final  outcome  of  comparison. 
+
+
+
+
+

@@ -1,0 +1,55 @@
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+{
+  param_1: format_arg1,
+  param_2: format_arg2,
+  param_3: format_arg3,
+  param_4: format_arg4,
+  param_5: format_arg5,
+  param_6: format_arg6,
+  param_7: format_arg7,
+  param_8: format_arg8,
+  param_9: string_obj_ptr,
+  param_10: format_str_ptr,
+  param_11: format_arg9,
+  param_12: format_arg10,
+  param_13: format_arg11,
+  param_14: format_arg12,
+  in_AL: is_variadic,
+  local_f8: variadic_args_buffer,
+  local_e8: variadic_arg1,
+  local_e0: variadic_arg2,
+  local_d8: variadic_arg3,
+  local_d0: variadic_arg4,
+  local_c8: fixed_arg1,
+  local_b8: fixed_arg2,
+  local_a8: fixed_arg3,
+  local_98: fixed_arg4,
+  local_88: fixed_arg5,
+  local_78: fixed_arg6,
+  local_68: fixed_arg7,
+  local_58: fixed_arg8,
+  local_48: formatted_str_ptr,
+  local_3c: formatted_str_len,
+  local_38: format_str_ptr_copy,
+  local_30: string_obj_ptr_copy,
+  local_28: vsnprintf_args_start,
+  local_24: vsnprintf_size,
+  local_20: vsnprintf_args_end,
+  local_18: vsnprintf_args_ptr,
+  local_10: stack_guard,
+}
+
+Reasoning:
+- param_1 to param_8 seem to be format arguments based on the context, so they are named format_arg1 to format_arg8.
+- param_9 and param_10 are pointers to a string object and format string respectively, so they are named string_obj_ptr and format_str_ptr.
+- param_11 to param_14 also seem to be additional format arguments, named format_arg9 to format_arg12.
+- in_AL is a flag indicating if the function is called with variadic arguments, so it's named is_variadic.
+- local_f8 is a buffer used to store variadic arguments, named variadic_args_buffer.
+- local_e8 to local_d0 store the first 4 variadic arguments, named variadic_arg1 to variadic_arg4.
+- local_c8 to local_58 store the first 8 fixed arguments if the function is not variadic, named fixed_arg1 to fixed_arg8.
+- local_48 is a pointer to the formatted string, so it's named formatted_str_ptr.
+- local_3c stores the length of the formatted string, named formatted_str_len.
+- local_38 and local_30 are copies of the format string and string object pointers, named format_str_ptr_copy and string_obj_ptr_copy.
+- local_28, local_24, local_20, and local_18 are used as arguments to vsnprintf, named vsnprintf_args_start, vsnprintf_size, vsnprintf_args_end, and vsnprintf_args_ptr respectively.
+- local_10 is used for stack protection, so it's named stack_guard.

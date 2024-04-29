@@ -1,0 +1,30 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: string_obj,     // Type: long*, represents a pointer to the input string object
+  param_2: start_pos,      // Type: ulong, represents the starting position of the substring
+  param_3: substr_length,  // Type: void*, represents the length of the substring
+  pvVar1: data_ptr,        // Type: void*, represents a pointer to the allocated memory for the substring data
+  local_28: actual_length, // Type: void*, represents the actual length of the substring (minimum of substr_length and remaining length)
+  local_10: substr_obj     // Type: void**, represents a pointer to the newly created substring object
+}
+
+Reasoning:
+- `param_1` is renamed to `string_obj` because it is a pointer to the input string object.
+- `param_2` is renamed to `start_pos` because it represents the starting position of the substring within the input string.
+- `param_3` is renamed to `substr_length` because it represents the desired length of the substring.
+- `pvVar1` is renamed to `data_ptr` because it is a pointer to the allocated memory that will store the substring data.
+- `local_28` is renamed to `actual_length` because it represents the actual length of the substring, which is the minimum of `substr_length` and the remaining length of the string from `start_pos`.
+- `local_10` is renamed to `substr_obj` because it is a pointer to the newly created substring object.
+
+The function `_string_substr` takes a string object, a starting position, and a desired substring length as input. It creates a new substring object by extracting the specified portion of the input string.
+
+The function first checks if the input string object is NULL, in which case it prints an error message and returns NULL.
+
+If the starting position is within the bounds of the input string, it determines the actual length of the substring by taking the minimum of the desired length and the remaining length of the string from the starting position.
+
+It then creates a new substring object using `_string_create` and allocates memory for the substring data using `_malloc`. If memory allocation fails, it prints an error message, frees the substring object, and returns NULL.
+
+If memory allocation succeeds, it copies the substring data from the input string to the newly allocated memory using `___strncpy_chk` and null-terminates the substring.
+
+Finally, it returns the newly created substring object.

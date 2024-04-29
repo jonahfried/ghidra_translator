@@ -1,0 +1,13 @@
+## Inferred Variable Names and Types:
+
+```
+{
+  "param_1": "string_ptr", // Pointer to the string being analyzed
+  "local_10": "string_length", // Length of the string
+}
+```
+
+## Reasoning:
+
+* **`param_1`**: This variable is a pointer to a long array. Given the function name `_string_cend` and the context of checking for a null pointer or a null value at the pointer location, it is highly likely that this pointer points to a string. Therefore, it is renamed to `string_ptr`.
+* **`local_10`**: This variable stores the result of the function, which is the length of the string. The calculation involves adding the value at the pointer location (`*param_1`) and the value at the next memory location (`param_1[1]`). This suggests that the string is null-terminated, and the length includes the null terminator. Hence, the variable is named `string_length`. 

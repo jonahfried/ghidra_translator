@@ -1,0 +1,16 @@
+{
+  param_1 : string_data_ptr,
+  param_2 : search_text,
+  param_3 : start_index,
+  pcVar1 : found_position,
+  local_c : result_index,
+}
+Explanation:
+- `param_1`: Renamed to `string_data_ptr` to indicate that it likely holds a pointer to some string data.
+- `param_2`: Renamed to `search_text` to indicate that it is the text being searched for within the string data.
+- `param_3`: Renamed to `start_index` to indicate that it represents the starting index for the search.
+- `pcVar1`: Renamed to `found_position` to indicate that it stores the position where the search_text was found.
+- `local_c`: Renamed to `result_index` to indicate that it is the index of the found position or -1 in case of errors or not found.
+}
+
+This mapping provides more context and clarity to the purpose of each variable in the function.

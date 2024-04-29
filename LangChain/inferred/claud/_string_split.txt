@@ -1,0 +1,28 @@
+Here's the mapping of placeholder variable names to descriptive names along with their inferred types and reasoning:
+
+{
+  param_1: string_obj (undefined8*),
+  param_2: delimiter (char*),
+  param_3: num_splits (undefined4*),
+  pcVar1: dup_str (char*),
+  uVar2: split_str (undefined8),
+  local_58: i (ulong),
+  local_50: split_index (ulong),
+  local_40: token (char*),
+  local_30: num_tokens (ulong),
+  local_10: splits (void*)
+}
+
+Reasoning:
+- param_1: It seems to be a pointer to a string object, so I named it string_obj.
+- param_2: It is used as a delimiter for splitting the string, so I named it delimiter.
+- param_3: It is a pointer to store the number of splits, so I named it num_splits.
+- pcVar1: It is assigned the result of string_strdup, which duplicates the string, so I named it dup_str.
+- uVar2: It is assigned the result of string_create for each split, so I named it split_str.
+- local_58: It is used as a loop counter variable, so I simply named it i.
+- local_50: It keeps track of the current split index, so I named it split_index.
+- local_40: It holds the current token during string splitting, so I named it token.
+- local_30: It counts the number of tokens found during the first pass of string splitting, so I named it num_tokens.
+- local_10: It is the pointer to the array of split strings, so I named it splits.
+
+The function seems to be splitting a string (param_1) based on a delimiter (param_2) and returning an array of the split substrings. It first counts the number of tokens by splitting the string once. Then it allocates memory for the array of splits and populates it by splitting the string again and creating a new string object for each split. The number of splits is stored in num_splits (param_3). The function handles various error cases and frees allocated memory accordingly.

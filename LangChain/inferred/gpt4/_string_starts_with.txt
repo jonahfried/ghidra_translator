@@ -1,0 +1,12 @@
+{
+  param_1 : string_array,
+  param_2 : substring,
+  local_9 : starts_with,
+  iVar1 : string_compare_result,
+  pcVar2 : substring_length,
+}
+- `param_1` is a pointer to a string array, so `string_array` is a descriptive name.
+- `param_2` is a pointer to a substring, so `substring` is a concise name.
+- `local_9` seems to indicate whether the string starts with the substring, so `starts_with` is fitting.
+- `iVar1` is the result of comparing two strings, so `string_compare_result` is a suitable name.
+- `pcVar2` represents the length of the substring, hence `substring_length` is chosen as the name.

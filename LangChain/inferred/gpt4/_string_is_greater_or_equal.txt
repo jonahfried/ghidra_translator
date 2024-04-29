@@ -1,0 +1,6 @@
+{
+  param_1 : str_1_address,
+  param_2 : str_2_address,
+}
+Reasoning:
+- `param_1` and `param_2` are addresses of strings being compared. Naming them as `str_1_address` and `str_2_address` provides clear information about their purpose in the function.

@@ -1,0 +1,30 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: string_ptr (long*),
+  param_2: substring_ptr (char*),
+  param_3: start_pos (ulong),
+  iVar1: cmp_result (int),
+  sVar2: substring_len (size_t),
+  local_38: current_pos (ulong),
+  local_c: return_value (undefined4)
+}
+
+Reasoning:
+1. param_1: Renamed to string_ptr as it seems to be a pointer to a string object.
+2. param_2: Renamed to substring_ptr as it appears to be a pointer to a substring to search for within the string.
+3. param_3: Renamed to start_pos as it likely represents the starting position to begin the search from.
+4. iVar1: Renamed to cmp_result as it stores the result of the string comparison using strncmp.
+5. sVar2: Renamed to substring_len as it holds the length of the substring obtained using strlen.
+6. local_38: Renamed to current_pos as it keeps track of the current position while iterating through the string.
+7. local_c: Renamed to return_value as it stores the value to be returned by the function.
+
+The function seems to be implementing a string operation to find the first occurrence of a character that is not present in the given substring, starting from a specified position. It performs error checks on the input parameters and returns the position of the first character that doesn't match the substring, or 0xffffffff if no such character is found or if there are any errors.
+
+The function first checks if the string pointer (string_ptr) or its data is NULL, and if so, it prints an error message and sets the return value to 0xffffffff. It then checks if the substring pointer (substring_ptr) is NULL and handles it similarly.
+
+If the starting position (start_pos) is within the bounds of the string, the function proceeds to find the first character that doesn't match the substring. It compares the substring with the characters in the string starting from the current position (current_pos) using strncmp. If a non-matching character is found, the function returns its position. If no non-matching character is found, the function sets the return value to 0xffffffff.
+
+If the starting position is out of bounds, an error message is printed, and the return value is set to 0xffffffff.
+
+Finally, the function returns the return_value, which is either the position of the first non-matching character or 0xffffffff if no such character is found or if there are any errors.

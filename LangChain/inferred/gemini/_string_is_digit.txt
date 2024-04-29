@@ -1,0 +1,15 @@
+## Placeholder to Descriptive Name Mapping:
+
+```
+{
+  "param_1": "string_ptr", // Pointer to the string being checked
+  "local_20": "char_index", // Index of the current character being checked
+  "local_9": "is_digit", // Flag indicating if the string consists only of digits
+}
+```
+
+## Reasoning:
+
+* **param_1**: This parameter is a pointer to a long array, which represents a string in this context. Naming it `string_ptr` clearly indicates its purpose.
+* **local_20**: This variable is used as an index to iterate through the characters of the string. `char_index` accurately reflects its role.
+* **local_9**: This variable stores a boolean value indicating whether the string consists only of digits. `is_digit` is a concise and descriptive name for this purpose. 

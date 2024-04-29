@@ -1,0 +1,32 @@
+## Mapping of Placeholder Variable Names to Descriptive Names
+
+Here's the mapping of placeholder variable names to descriptive names along with explanations:
+
+```
+{
+  "param_1": "string_object", // Represents a pointer to a String object
+  "param_2": "substring", // Represents a pointer to the substring to check
+  "local_9": "result", // Represents the boolean result of the function
+  "sVar2": "substring_length", // Represents the length of the substring
+  "iVar1": "comparison_result", // Represents the result of comparing the substring with the end of the string
+}
+```
+
+## Explanation of Inferred Names
+
+* **string_object**: This name clearly indicates that `param_1` points to a String object, which is consistent with its usage in the code.
+* **substring**: This name directly reflects the purpose of `param_2`, which is to hold the substring to be checked against the end of the string.
+* **result**: This name summarizes the function's output, which is a boolean indicating whether the string ends with the substring.
+* **substring_length**: This name describes the value stored in `sVar2`, which is the length of the substring.
+* **comparison_result**: This name clarifies the purpose of `iVar1`, which is to store the outcome of comparing the substring with the end of the string. 
+
+## Reasoning Behind the Mapping
+
+The inferred names are chosen to be:
+
+* **Descriptive**: They clearly convey the purpose and meaning of each variable.
+* **Concise**: They are short and to the point, avoiding unnecessary verbosity.
+* **Consistent**: They use consistent naming conventions (snake_case) for better readability. 
+* **Contextual**: They take into account the context of the code and the surrounding variables. 
+
+By using these descriptive names, the code becomes more readable and easier to understand. 

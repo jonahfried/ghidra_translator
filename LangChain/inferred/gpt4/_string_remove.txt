@@ -1,0 +1,12 @@
+{
+  param_1 : string_ptr,
+  param_2 : substring,
+  sVar1 : substring_length,
+  sVar2 : remaining_length,
+  local_28 : current_position,
+}
+- `param_1` is a pointer to a string object, so `string_ptr` is a descriptive name.
+- `param_2` represents a substring, hence `substring` is a fitting name.
+- `sVar1` is used to store the length of the substring, hence `substring_length`.
+- `sVar2` is used to store the remaining length after removing the substring, hence `remaining_length`.
+- `local_28` seems to be used as a temporary variable to hold the current position, so `current_position` is an appropriate name.

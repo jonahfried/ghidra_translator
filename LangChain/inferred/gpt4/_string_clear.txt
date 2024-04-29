@@ -1,0 +1,4 @@
+{
+  param_1: string_ptr,
+}
+- `param_1`: This parameter seems to be a pointer to a string object. Therefore, `string_ptr` is a concise and descriptive name for this variable.

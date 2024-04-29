@@ -1,0 +1,19 @@
+Here's the mapping of placeholder names to descriptive names and types, along with the reasoning:
+
+{
+  param_1: string_ptr,
+  local_10: last_char_index,
+}
+
+Reasoning:
+1. `param_1`:
+   - Inferred name: `string_ptr`
+   - Inferred type: `long *` (pointer to long)
+   - Reasoning: The parameter is a pointer to a long value, and based on the logic in the function, it seems to represent a string. The function appears to be calculating the index of the last character in the string. Therefore, `string_ptr` is a descriptive name for this parameter.
+
+2. `local_10`:
+   - Inferred name: `last_char_index`
+   - Inferred type: `long`
+   - Reasoning: The local variable is used to store the calculated index of the last character in the string. It is initialized to 0 if the `string_ptr` is null or if the second element of the string (likely the length) is 0. Otherwise, it is calculated as `*string_ptr + string_ptr[1] - 1`, which suggests that `string_ptr[0]` represents the start index of the string, and `string_ptr[1]` represents the length of the string. By adding them together and subtracting 1, we get the index of the last character in the string. Hence, `last_char_index` is a fitting name for this variable.
+
+The function seems to be named `_string_back`, which aligns with the idea that it returns the index of the last character in the string.

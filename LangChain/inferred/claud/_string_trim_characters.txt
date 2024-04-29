@@ -1,0 +1,25 @@
+Here's the mapping of placeholder variable names to descriptive names, along with the reasoning:
+
+{
+  param_1: string_ptr,
+  param_2: trim_chars,
+  pcVar1: char_ptr,
+  bVar2: is_trim_char,
+  local_28: end_ptr,
+  local_20: start_ptr
+}
+
+Reasoning:
+1. param_1 -> string_ptr: It is a pointer to a pointer to a char, which suggests it is a pointer to a string object. The name string_ptr clearly indicates that it points to a string.
+
+2. param_2 -> trim_chars: This parameter is used as a set of characters to trim from the string. The name trim_chars conveys that it represents the characters to be trimmed.
+
+3. pcVar1 -> char_ptr: It is a pointer to a char used in the _strchr function to check if a character exists in the trim_chars set. The name char_ptr indicates that it is a pointer to a character.
+
+4. bVar2 -> is_trim_char: This variable is used as a boolean flag to indicate whether a character is found in the trim_chars set. The name is_trim_char clearly conveys its purpose.
+
+5. local_28 -> end_ptr: It is a pointer initialized to the end of the string and is used to track the end position during the trimming process. The name end_ptr suggests that it points to the end of the string.
+
+6. local_20 -> start_ptr: It is a pointer initialized to the start of the string and is used to track the start position during the trimming process. The name start_ptr indicates that it points to the start of the string.
+
+The function _string_trim_characters seems to trim characters from both ends of a string based on the provided set of characters to trim. It moves the start_ptr forward and the end_ptr backward until a character not present in the trim_chars set is found. Finally, it modifies the string to remove the trimmed characters and updates the length of the string accordingly.

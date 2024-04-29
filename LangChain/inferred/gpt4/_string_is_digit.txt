@@ -1,0 +1,8 @@
+{
+  param_1 : string_ptr,
+  local_20 : index,
+  local_9 : is_digit,
+}
+- `param_1` is a pointer to a string, hence `string_ptr` is a suitable name.
+- `local_20` is used as an index for iterating over the characters of the string, so `index` is an appropriate name.
+- `local_9` is used to store the result of whether the string is a digit or not, so `is_digit` is a fitting name.

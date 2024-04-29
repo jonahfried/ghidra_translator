@@ -1,0 +1,18 @@
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+{
+  param_1: string_ptr,
+  param_2: substring,
+  sVar1: substring_length,
+  sVar2: remaining_length,
+  local_28: current_ptr
+}
+
+Reasoning:
+1. param_1: It is a pointer to a pointer to a char, which suggests it is a pointer to a string. Hence, string_ptr is a suitable name.
+2. param_2: It is a pointer to a char and is used as a substring to be removed from the string. Therefore, substring is an appropriate name.
+3. sVar1: This variable is assigned the length of the substring using the _strlen function. Thus, substring_length is a descriptive name.
+4. sVar2: It represents the length of the remaining string after removing the substring. So, remaining_length is a fitting name.
+5. local_28: This variable is used as a pointer to traverse the string and locate occurrences of the substring. current_ptr is a suitable name to indicate its purpose.
+
+The function _string_remove seems to remove all occurrences of a given substring from a string. It performs error checking for null pointers and empty substrings. It uses _strstr to find the substring within the string and then uses ___memmove_chk to remove the substring by shifting the remaining characters to the left. The process is repeated until all occurrences of the substring are removed.

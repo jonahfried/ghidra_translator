@@ -1,0 +1,26 @@
+## Variable Mapping & Reasoning
+
+Here's the mapping from placeholder variable names to descriptive names:
+
+```
+{
+  "param_1": "string_ptr",
+  "param_2": "start_index",
+  "param_3": "end_index",
+}
+```
+
+**Reasoning:**
+
+* `param_1`: This pointer points to the beginning of the string object. Since the function operates on strings, `string_ptr` accurately reflects its purpose.
+* `param_2`: This parameter defines the starting index of the range to be removed. `start_index` clearly indicates its role.
+* `param_3`: This parameter defines the ending index (exclusive) of the range to be removed. `end_index` precisely describes its function.
+
+**Further Explanation:**
+
+* The function first checks if the `string_ptr` is null or if the object it points to is empty (value of 0). If either is true, an error message is printed to standard error using `fprintf`.
+* If the range defined by `start_index` and `end_index` is valid (i.e., `start_index` is less than `end_index` and both are within the string bounds), the range is removed using `memmove`. `memmove` ensures safe overlapping memory regions.
+* After removing the range, the string length is updated by subtracting the removed segment's size (`end_index - start_index`).
+* If the range is invalid, an error message is printed using `fprintf`.
+
+

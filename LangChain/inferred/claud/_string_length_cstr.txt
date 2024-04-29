@@ -1,0 +1,28 @@
+Here's the mapping of placeholder names to inferred names and types, along with the reasoning:
+
+{
+  param_1: cstr,
+  local_10: length
+}
+
+Reasoning:
+- param_1: This parameter is a pointer to a char, which suggests it is a C-style string. Therefore, a descriptive name for it would be cstr (short for "C-string").
+- local_10: This local variable is used to store the length of the string. It is assigned the return value of the strlen function, which calculates the length of a C-style string. Hence, an appropriate name for it would be length.
+
+Here's the code with the inferred names and types:
+
+size_t _string_length_cstr(char *cstr)
+{
+  size_t length;
+  
+  if (cstr == (char *)0x0) {
+    _fprintf(*(FILE **)PTR____stderrp_10000a038, "Error: str is null in string_length_cstr.\n");
+    length = 0;
+  }
+  else {
+    length = _strlen(cstr);
+  }
+  return length;
+}
+
+The function _string_length_cstr takes a pointer to a char (cstr) as input and returns the length of the string. It first checks if the input string is null. If it is null, it prints an error message to stderr and sets the length to 0. Otherwise, it calculates the length of the string using the strlen function and assigns it to the length variable. Finally, it returns the length of the string.

@@ -1,0 +1,10 @@
+{
+  param_1 : string_pointer,
+  iVar1 : space_check_result,
+  bVar2 : is_space,
+  local_18 : current_length,
+}
+- `param_1`: Renamed to `string_pointer` since it seems to be pointing to a string object.
+- `iVar1`: Renamed to `space_check_result` to indicate its purpose of checking if a character is a space.
+- `bVar2`: Renamed to `is_space` to indicate its purpose of storing whether a character is a space or not.
+- `local_18`: Renamed to `current_length` to clarify that it is holding the current length of the string being trimmed.

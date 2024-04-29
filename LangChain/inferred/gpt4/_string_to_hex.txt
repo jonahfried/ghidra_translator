@@ -1,0 +1,18 @@
+{
+  str : input_string,
+  len : input_string_length,
+  uVar1 : empty_check_result,
+  local_2b : hex_byte_str,
+  local_28 : index,
+  local_20 : hex_string,
+  local_18 : input_string_ptr,
+  local_10 : result_hex_string,
+}
+- `str` is the input string passed to the function.
+- `len` represents the length of the input string.
+- `uVar1` holds the result of the check for an empty string.
+- `local_2b` represents a string containing a hexadecimal byte.
+- `local_28` is an index used in the loop.
+- `local_20` stores the resulting hex string.
+- `local_18` points to the input string.
+- `local_10` holds the final hex string to be returned.

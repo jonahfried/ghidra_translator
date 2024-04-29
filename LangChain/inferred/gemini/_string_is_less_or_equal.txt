@@ -1,0 +1,22 @@
+## Mapping and Reasoning
+
+Here's the mapping of placeholder names to descriptive names and types, along with the reasoning behind each:
+
+```
+{
+  "param_1": "string_1", // First string being compared
+  "param_2": "string_2", // Second string being compared
+}
+```
+
+**Reasoning:**
+
+* Both `param_1` and `param_2` are passed as arguments to the function. 
+* Their type is `undefined8`, which is a common placeholder for pointers in decompiled code. 
+* Since the function compares two strings, it's reasonable to infer that these pointers point to strings. 
+* We name them `string_1` and `string_2` to reflect their role in the comparison.
+
+**Additional Notes:**
+
+* The function `_string_compare` likely performs a lexicographical comparison of the two strings.
+* The return value of `_string_is_less_or_equal` is true if `string_1` is lexicographically less than or equal to `string_2`, and false otherwise. 

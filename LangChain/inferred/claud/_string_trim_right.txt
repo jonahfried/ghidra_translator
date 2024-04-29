@@ -1,0 +1,36 @@
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+{
+  param_1: string_ptr,
+  iVar1: is_space_result,
+  bVar2: is_space,
+  local_18: index
+}
+
+Reasoning:
+- param_1: This is a pointer to a string object, so string_ptr is a good descriptive name.
+- iVar1: This variable stores the result of the _isspace function, which checks if a character is a whitespace. So, is_space_result is an appropriate name.
+- bVar2: This is a boolean variable that is set based on the result of _isspace. It indicates whether the character is a whitespace or not. Hence, is_space is a suitable name.
+- local_18: This variable is used as an index to iterate over the characters of the string from the end. It starts from the length of the string and decrements until a non-whitespace character is found. Therefore, index is a fitting name.
+
+The function _string_trim_right seems to trim the whitespace characters from the right end of the string. Here's a step-by-step explanation of the code:
+
+1. It first checks if the string pointer (param_1) is null. If it is, it prints an error message using _fprintf.
+
+2. If the string pointer is not null and the length of the string (param_1[1]) is not zero, it proceeds to trim the whitespace characters.
+
+3. It initializes the index variable (local_18) with the length of the string.
+
+4. It enters a loop that continues until a non-whitespace character is found from the right end of the string.
+
+5. Inside the loop, it checks if the current index is not zero (to avoid going out of bounds).
+
+6. If the index is not zero, it retrieves the character at the current index (*(byte *)(*param_1 + (local_18 - 1))) and passes it to the _isspace function to check if it is a whitespace character.
+
+7. If the character is a whitespace, it decrements the index and continues the loop. If the character is not a whitespace, it breaks out of the loop.
+
+8. After the loop, it checks if the final index (local_18) is less than the original length of the string (param_1[1]). If it is, it means that whitespace characters were found and trimmed.
+
+9. It sets the character at the final index to null-terminator (0) to mark the new end of the string and updates the length of the string (param_1[1]) to the final index.
+
+10. Finally, the function returns.

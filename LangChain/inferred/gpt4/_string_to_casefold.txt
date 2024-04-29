@@ -1,0 +1,8 @@
+{
+  param_1 : input_array,
+  local_18 : index,
+  iVar1 : lowercase_char,
+}
+- `param_1` is a pointer to a long array and represents the input array. Its name is inferred as `input_array` to indicate that it holds the input data.
+- `local_18` is used as an index in a loop and its name is inferred as `index` to clearly convey its purpose.
+- `iVar1` is assigned the result of converting a character to lowercase and its name is inferred as `lowercase_char` to indicate the purpose of storing the lowercase character.

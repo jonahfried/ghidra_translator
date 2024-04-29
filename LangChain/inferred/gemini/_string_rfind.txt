@@ -1,0 +1,29 @@
+## Mapping of Placeholder Names to Descriptive Names
+
+Here's a mapping of placeholder names to descriptive names and types, along with explanations:
+
+```
+{
+  "param_1": "string_object", // Pointer to the String object
+  "param_2": "buffer", // Pointer to the buffer containing the substring to search
+  "param_3": "position", // Maximum position to search for the substring
+  "iVar1": "comparison_result", // Result of comparing the substring with a potential match
+  "sVar2": "buffer_length", // Length of the buffer containing the substring
+  "local_40": "adjusted_position", // Position adjusted based on the String object's length
+  "local_34": "current_position", // Current position being checked for a substring match
+}
+```
+
+## Explanation of Inferred Names
+
+* **`param_1`**: This parameter points to the String object. Since it's the main object involved, it's named `string_object` for clarity.
+* **`param_2`**: This parameter points to the buffer containing the substring to search. It's named `buffer` to reflect its purpose.
+* **`param_3`**: This parameter specifies the maximum position to search for the substring. It's named `position` to clearly indicate its role.
+* **`iVar1`**: This variable stores the result of comparing the substring with a potential match. It's named `comparison_result` to accurately describe its purpose.
+* **`sVar2`**: This variable holds the length of the buffer containing the substring. It's named `buffer_length` to convey its meaning explicitly.
+* **`local_40`**: This variable represents the position adjusted based on the String object's length. It's named `adjusted_position` to reflect its calculation and purpose.
+* **`local_34`**: This variable tracks the current position being checked for a substring match. It's named `current_position` for clarity and conciseness.
+
+## Reasoning
+
+These names are chosen to be descriptive, concise, and consistent with their usage in the code. They reflect the purpose of each variable and make the code easier to understand and maintain. 

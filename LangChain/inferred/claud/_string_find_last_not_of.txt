@@ -1,0 +1,22 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: string_ptr (long*),
+  param_2: substring_ptr (char*),
+  param_3: start_pos (ulong),
+  iVar1: cmp_result (int),
+  sVar2: substring_len (size_t),
+  local_40: search_start_pos (ulong),
+  local_34: current_pos (int)
+}
+
+Reasoning:
+1. param_1 -> string_ptr: It is a pointer to a long value that likely represents a string object or its data.
+2. param_2 -> substring_ptr: It is a pointer to a char buffer, which is used as a substring to search for.
+3. param_3 -> start_pos: It represents the starting position for the search operation.
+4. iVar1 -> cmp_result: It stores the result of the string comparison using strncmp.
+5. sVar2 -> substring_len: It holds the length of the substring obtained using strlen.
+6. local_40 -> search_start_pos: It is used to calculate the actual starting position for the search, considering the length of the substring and the provided start_pos.
+7. local_34 -> current_pos: It is used as a loop counter to iterate over the positions in the string, starting from search_start_pos and moving backwards.
+
+The function seems to be implementing a "find last not of" operation on a string, where it searches for the last occurrence of a character that is not present in the given substring, starting from the specified position and moving backwards. It performs error checks for null pointers, empty strings, and invalid positions. The function returns the index of the last character that is not found in the substring, or -1 if no such character is found or if there are any errors.

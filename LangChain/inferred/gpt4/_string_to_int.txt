@@ -1,0 +1,8 @@
+{
+  param_1: string_array,
+  uVar1: flags,
+  local_c: converted_int,
+}
+- `param_1`: Renamed to `string_array` since it represents an array of strings being passed as a parameter.
+- `uVar1`: Renamed to `flags` as it seems to hold some flags or status information.
+- `local_c`: Renamed to `converted_int` since it holds the integer value converted from a string.

@@ -1,0 +1,10 @@
+{
+  param_1: input_array_ptr,
+  iVar1: is_alpha_result,
+  local_28: index,
+  local_10: result_string,
+}
+- `param_1`: Renamed to `input_array_ptr` as it seems to be a pointer to an input array.
+- `iVar1`: Renamed to `is_alpha_result` as it stores the result of the `_isalpha` function, which checks if a character is an alphabet character.
+- `local_28`: Renamed to `index` as it is used as an index variable in a loop.
+- `local_10`: Renamed to `result_string` as it is used to store the result string that is being constructed.

@@ -1,0 +1,16 @@
+{
+  param_1 : string_array,
+  param_2 : target_char,
+  param_3 : position,
+  bVar1 : is_within_bounds,
+  local_38 : found_position,
+  local_2c : last_found_position,
+  local_c : result,
+}
+- `param_1`: Renamed to `string_array` as it seems to be a pointer to an array of strings.
+- `param_2`: Renamed to `target_char` as it appears to be a pointer to a character that is being searched for in the string array.
+- `param_3`: Renamed to `position` as it likely indicates a specific position in the string array.
+- `bVar1`: Renamed to `is_within_bounds` to reflect its purpose of checking if a position is within bounds.
+- `local_38`: Renamed to `found_position` since it seems to hold the current position of the target character in the string array.
+- `local_2c`: Renamed to `last_found_position` to indicate it stores the last found position of the target character.
+- `local_c`: Renamed to `result` as it is the final result of the function.

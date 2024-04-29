@@ -1,0 +1,22 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: string_obj,     // It seems to be a pointer to a string object
+  param_2: search_buffer,  // It is used as a buffer to search within the string
+  param_3: search_pos,     // It represents the position from where to start searching
+  iVar1: cmp_result,       // Stores the result of string comparison using strncmp
+  sVar2: search_len,       // Stores the length of the search buffer
+  local_40: actual_pos,    // Represents the actual position to start searching, adjusted based on string length
+  local_34: curr_pos       // Used as a loop counter to iterate over positions in the string
+}
+
+Reasoning:
+- `param_1` is inferred to be `string_obj` as it seems to be a pointer to a string object. It is checked for NULL and its data is accessed.
+- `param_2` is named `search_buffer` because it is used as a buffer to search within the string.
+- `param_3` is called `search_pos` as it represents the position from where the search should start.
+- `iVar1` is assigned the result of `strncmp` which compares strings, so it is named `cmp_result`.
+- `sVar2` stores the length of the search buffer obtained using `strlen`, hence it is named `search_len`.
+- `local_40` is named `actual_pos` because it represents the actual position to start searching, adjusted based on the string length.
+- `local_34` is used as a loop counter to iterate over positions in the string, so it is named `curr_pos`.
+
+The function seems to be implementing a string searching algorithm to find the last occurrence of a given substring within a string, starting from a specified position. It performs error handling by checking for NULL pointers and empty buffers. It adjusts the search position based on the string length and iterates backwards from that position, comparing substrings using `strncmp`. If a match is found, it returns the position; otherwise, it returns -1.

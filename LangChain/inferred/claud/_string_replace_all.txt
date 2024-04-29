@@ -1,0 +1,26 @@
+Here's the mapping of placeholder variable names to descriptive names and types, along with the reasoning behind each name:
+
+{
+  param_1: string_ptr (pointer to the string to be modified),
+  param_2: search_str (the substring to be replaced),
+  param_3: replace_str (the string to replace the substring with),
+  puVar1: new_string_ptr (pointer to the newly created string),
+  pcVar2: found_ptr (pointer to the found occurrence of the substring),
+  sVar3: search_len (length of the search substring),
+  local_30: current_ptr (pointer to the current position in the string)
+}
+
+Reasoning:
+- param_1: It is a pointer to the string that will be modified by replacing substrings, so string_ptr is a descriptive name.
+- param_2: It represents the substring to be searched for and replaced, so search_str is an appropriate name.
+- param_3: It represents the string that will replace the occurrences of the search substring, so replace_str is a fitting name.
+- puVar1: It is a pointer to a newly created string that will store the modified string, so new_string_ptr describes its purpose.
+- pcVar2: It is a pointer to the found occurrence of the search substring within the string, so found_ptr is a suitable name.
+- sVar3: It stores the length of the search substring, so search_len is a descriptive name.
+- local_30: It is a pointer that keeps track of the current position in the string during the replacement process, so current_ptr is an appropriate name.
+
+The function _string_replace_all takes a pointer to a string (string_ptr), a search substring (search_str), and a replacement string (replace_str). It replaces all occurrences of the search substring in the string with the replacement string.
+
+The function first checks for null pointers and invalid input. If the input is valid, it creates a new string (new_string_ptr) to store the modified string. It then iterates through the string, finding each occurrence of the search substring using _strstr. For each occurrence, it appends the substring before the occurrence to the new string, appends the replacement string, and moves the current position (current_ptr) to the next character after the occurrence. After the loop, it appends the remaining substring to the new string.
+
+Finally, it assigns the modified string back to the original string pointer using _string_assign, deallocates the new string, and returns.

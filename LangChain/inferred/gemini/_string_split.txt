@@ -1,0 +1,29 @@
+## Variable Mapping and Reasoning
+
+Here's the mapping of placeholder variable names to descriptive names along with the reasoning:
+
+```
+{
+  param_1: string_to_split, // The string to be split
+  param_2: delimiter,  // The delimiter used for splitting
+  param_3: split_count_out,  // Output parameter to store the number of splits
+  pcVar1: next_token, // Stores the next token during splitting
+  local_58: i,  // Loop counter for deallocating strings in case of error
+  local_50: created_strings_count,  // Counter for successfully created strings
+  local_40: token,  // Stores a single split token 
+  local_30: split_count, // Stores the total number of splits
+  local_10: split_array_ptr,  // Pointer to the array of split strings 
+}
+```
+
+**Reasoning:**
+
+* `param_1`: The first parameter is the string to split, so we name it `string_to_split`.
+* `param_2`: The second parameter specifies the delimiter, hence the name `delimiter`.
+* `param_3`: This is an output parameter that stores the number of splits, hence `split_count_out`.
+* `pcVar1`: Used inside a loop to iterate through tokens, so named `next_token`.
+* `local_58`: Used as a loop counter for deallocation, hence named `i`.
+* `local_50`: Counts successfully created string objects, named `created_strings_count`.
+* `local_40`: Holds a single token after splitting, hence named `token`. 
+* `local_30`: Stores the total number of split tokens, named `split_count`
+* `local_10`: Pointer to the dynamically allocated array that stores the split strings, hence named `split_array_ptr` 

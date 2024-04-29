@@ -1,0 +1,31 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: str_ptr (long*),
+  iVar1: char_code (int),
+  local_28: index (ulong),
+  local_10: result_str (void*)
+}
+
+Reasoning:
+1. param_1:
+   - Renamed to str_ptr to indicate it's a pointer to the input string.
+   - Type is long* based on the function parameter.
+
+2. iVar1:
+   - Renamed to char_code to represent the character code returned by _isalpha and _toupper functions.
+   - Type is int based on the return type of _isalpha and _toupper functions.
+
+3. local_28:
+   - Renamed to index to represent the index variable used in the loop to iterate over the characters of the input string.
+   - Type is ulong (unsigned long) based on its usage in the loop condition and increment.
+
+4. local_10:
+   - Renamed to result_str to indicate it's the pointer to the resulting uppercase string.
+   - Type is void* based on the return type of the function and the type returned by _malloc.
+
+The function _string_to_upper takes a pointer to a string (str_ptr) and converts it to uppercase. It first checks if the input string pointer is NULL, and if so, it prints an error message and returns NULL. Otherwise, it allocates memory for the resulting string (result_str) based on the length of the input string.
+
+It then iterates over each character of the input string using the index variable. For each character, it checks if it's an alphabetic character using _isalpha. If it's not alphabetic or already uppercase, it copies the character as-is to the result string. If it's a lowercase character, it converts it to uppercase using _toupper and stores it in the result string.
+
+Finally, it null-terminates the result string and returns the pointer to the uppercase string (result_str).

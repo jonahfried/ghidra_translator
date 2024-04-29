@@ -1,0 +1,22 @@
+Here's the mapping of placeholder variable names to descriptive names and types, along with the reasoning behind each choice:
+
+{
+  param_1: string_ptr,
+  local_10: end_ptr,
+}
+
+Reasoning:
+1. param_1 -> string_ptr:
+   - The parameter is a pointer to a long value (long *), which likely represents a pointer to a string structure.
+   - The function name "_string_end" suggests that the function is related to finding the end of a string.
+   - Therefore, renaming param_1 to string_ptr clearly indicates that it is a pointer to the string.
+
+2. local_10 -> end_ptr:
+   - local_10 is a local variable that stores the result of the function.
+   - The function calculates the end position of the string by adding the first element of the string structure (likely the string length) to the second element (likely the string data pointer).
+   - The variable local_10 holds the calculated end position of the string.
+   - Renaming it to end_ptr makes it clear that it represents the pointer to the end of the string.
+
+The function checks if the input string pointer (string_ptr) is null or if the first element of the string structure is zero. If either condition is true, it prints an error message to stderr and sets end_ptr to 0. Otherwise, it calculates the end position of the string by adding the first element (string length) to the second element (string data pointer) and assigns the result to end_ptr.
+
+The function returns end_ptr, which represents the pointer to the end of the string.

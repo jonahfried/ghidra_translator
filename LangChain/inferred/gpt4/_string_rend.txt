@@ -1,0 +1,7 @@
+{
+  param_1 : pointer to input string,
+  local_10 : result,
+}
+Reasoning:
+- `param_1`: The input parameter is a pointer to a string, inferred from the comparison with `0x0` and dereferencing with `*param_1`.
+- `local_10`: This variable is used to store the result of the calculation. The name `result` is concise and describes the purpose of this variable in the function.

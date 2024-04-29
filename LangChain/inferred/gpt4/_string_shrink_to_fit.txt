@@ -1,0 +1,8 @@
+{
+  param_1 : string_ptr,
+  lVar1 : old_length,
+  lVar2 : new_string_ptr,
+}
+- `param_1`: Renamed to `string_ptr` as it is a pointer to a string object.
+- `lVar1`: Renamed to `old_length` as it seems to represent the length of the original string.
+- `lVar2`: Renamed to `new_string_ptr` as it appears to hold the pointer to the newly allocated string.

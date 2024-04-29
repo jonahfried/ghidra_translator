@@ -1,0 +1,14 @@
+{
+  param_1: string_object_ptr,
+  param_2: substring_start_index,
+  param_3: substring_length,
+  pvVar1: allocated_memory_ptr,
+  local_28: adjusted_substring_length,
+  local_10: result_string_ptr,
+}
+- `param_1` is likely a pointer to a string object, so `string_object_ptr` is a descriptive name.
+- `param_2` is used as the start index for the substring, so `substring_start_index` is appropriate.
+- `param_3` is used as the length of the substring, so `substring_length` fits well.
+- `pvVar1` is assigned the result of a memory allocation, so `allocated_memory_ptr` describes its purpose.
+- `local_28` is used to store an adjusted length for the substring, so `adjusted_substring_length` is a clear name.
+- `local_10` is the pointer to the result string, so `result_string_ptr` is a suitable name.

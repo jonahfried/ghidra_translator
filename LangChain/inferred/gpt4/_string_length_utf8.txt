@@ -1,0 +1,12 @@
+{
+  param_1 : input_str,
+  local_20 : utf8_length,
+  local_18 : current_char,
+  local_10 : result,
+}
+- `param_1` : Renamed to `input_str` as it represents the input string for which we are calculating the UTF-8 length.
+- `local_20` : Renamed to `utf8_length` as it accumulates the length of the UTF-8 characters in the input string.
+- `local_18` : Renamed to `current_char` as it represents the current character being processed in the loop.
+- `local_10` : Renamed to `result` as it stores the final calculated length of the UTF-8 characters in the input string.
+  
+These names provide clarity and context to the purpose of each variable in the function.

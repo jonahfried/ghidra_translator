@@ -1,0 +1,6 @@
+{
+  param_1: utf8_char
+}
+Reasoning:
+- `param_1` represents an input parameter of type `char` which is assumed to be a UTF-8 character.
+- The inferred name `utf8_char` is concise and descriptive of the purpose of the parameter.

@@ -1,0 +1,29 @@
+## Placeholder to Descriptive Name Mapping
+
+Here's the mapping of placeholder names to descriptive names along with explanations:
+
+```
+{
+  "param_1": "string1",  // First string to compare (pointer)
+  "param_2": "string2",  // Second string to compare (pointer)
+  "local_c": "comparison_result",  // Result of the string comparison
+}
+```
+
+### Reasoning
+
+* **param_1** and **param_2**: These names clearly represent input parameters to the function. Since both are pointers to character arrays, they are interpreted as strings. Adding a number to the name helps differentiate them and indicates their order.
+* **local_c**: This variable stores the outcome of the string comparison. The name "comparison_result" accurately reflects its purpose.
+
+## Explanation
+
+The code defines a function `_string_compare_ignore_case` that performs a case-insensitive string comparison using the `_strcasecmp` function. 
+
+The function checks for various conditions:
+
+* If either `param_1` or `param_2` is null, the comparison is undefined. 
+* If both are null, the result is 0 (equal). 
+* If one is null and the other isn't, the result is 1 (not equal).
+* If both pointers are not null and point to non-null strings, `_strcasecmp` is used for the comparison.
+
+The final result of the comparison is stored in `local_c` and returned by the function. 

@@ -1,0 +1,25 @@
+## Mapping of Placeholder Names
+
+Here's the mapping of placeholder names to descriptive snake_case names and types, along with explanations for each:
+
+```
+{
+  param_1: string1,  // First string argument for comparison
+  param_2: string2,  // Second string argument for comparison
+}
+```
+
+## Reasoning Behind Inferred Names
+
+**param_1**: 
+* Renamed to `string1` as it represents the first string argument for comparison within the function.
+* The type is inferred as `string` based on its usage in the `_string_compare` function, which typically compares strings.
+
+**param_2**:
+* Renamed to `string2` for consistency with `string1`, indicating the second string argument.
+* Type remains as `string` for the same reason as `string1`. 
+
+## Additional Notes
+
+* The return value of the `_string_compare` function is not used in this code snippet, so we don't infer a name for it.
+* The `iVar1` variable is also not included in the mapping as it is only used internally within the function and doesn't provide additional context for understanding the function's purpose. 

@@ -1,0 +1,10 @@
+{
+  param_1 : float,
+  uVar1 : result_string,
+  local_38 : formatted_string_buffer,
+  local_10 : stack_chk_guard_value,
+}
+- `param_1`: It's a parameter of type `float` representing a float value.
+- `uVar1`: This variable seems to hold the result of a function call `_string_create`, so `result_string` is a descriptive name.
+- `local_38`: This variable is an array used as a buffer for a formatted string, so `formatted_string_buffer` is appropriate.
+- `local_10`: This variable seems to store the value of the stack check guard, so `stack_chk_guard_value` is a fitting name.

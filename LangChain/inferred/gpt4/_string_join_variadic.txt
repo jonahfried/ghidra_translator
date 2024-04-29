@@ -1,0 +1,55 @@
+{
+  in_AL : is_string_literal,
+  local_158 : current_param_pointer,
+  local_140 : current_param_value,
+  local_128 : string_lengths_array,
+  local_108 : last_param_value,
+  local_100 : second_last_param_value,
+  local_f8 : param_1_copy,
+  local_e8 : param_2_copy,
+  local_d8 : param_3_copy,
+  local_c8 : param_4_copy,
+  local_b8 : param_5_copy,
+  local_a8 : param_6_copy,
+  local_98 : param_7_copy,
+  local_88 : param_8_copy,
+  local_78 : new_string_pointer,
+  local_70 : current_param_pointer_copy,
+  local_68 : loop_counter,
+  local_60 : current_string_position,
+  local_58 : new_string,
+  local_50 : current_param,
+  local_48 : current_param_index,
+  local_40 : total_length,
+  local_38 : total_params,
+  local_30 : result_string,
+  local_28 : current_param_offset,
+  local_24 : max_offset,
+  local_20 : param_pointers_array,
+  local_18 : current_param_array,
+  local_10 : stack_chk_guard_value
+}
+- `is_string_literal`: Represents a boolean value indicating whether a character is a string literal. The character `in_AL` is checked for this purpose.
+- `current_param_pointer`: Points to the current parameter being processed.
+- `current_param_value`: Represents the value of the current parameter being processed.
+- `string_lengths_array`: Array to store the lengths of strings obtained from parameters.
+- `last_param_value`: Value of the last parameter passed.
+- `second_last_param_value`: Value of the second last parameter passed.
+- `param_x_copy`: Copies of the original parameters.
+- `new_string_pointer`: Pointer to the newly created string.
+- `current_param_pointer_copy`: Copy of the current parameter pointer.
+- `loop_counter`: Counter for the loop iterations.
+- `current_string_position`: Position tracker in the new string being constructed.
+- `new_string`: Newly created string by joining all the parameters.
+- `current_param`: Current parameter being processed.
+- `current_param_index`: Index of the current parameter being processed.
+- `total_length`: Total length of all strings to be joined.
+- `total_params`: Total number of parameters to be joined.
+- `result_string`: Final result string after joining all the parameters.
+- `current_param_offset`: Offset of the current parameter.
+- `max_offset`: Maximum offset value allowed.
+- `param_pointers_array`: Array to store pointers to parameters.
+- `current_param_array`: Array storing current parameters.
+- `stack_chk_guard_value`: Value of the stack check guard.
+
+These names are inferred based on the usage and context of the variables within the given function.

@@ -1,0 +1,52 @@
+{
+  param_1 : format_string_address,
+  param_2 : format_length,
+  param_3 : param_3,
+  param_4 : param_4,
+  param_5 : param_5,
+  param_6 : param_6,
+  param_7 : param_7,
+  param_8 : param_8,
+  param_9 : string_object_address,
+  param_10 : format_string_address,
+  param_11 : param_11,
+  param_12 : param_12,
+  param_13 : param_13,
+  param_14 : param_14,
+  in_AL : is_not_null_char,
+  local_f8 : format_buffer,
+  local_e8 : param_11_copy,
+  local_e0 : param_12_copy,
+  local_d8 : param_13_copy,
+  local_d0 : param_14_copy,
+  local_c8 : format_string_address_copy,
+  local_b8 : format_length_copy,
+  local_a8 : param_3_copy,
+  local_98 : param_4_copy,
+  local_88 : param_5_copy,
+  local_78 : param_6_copy,
+  local_68 : param_7_copy,
+  local_58 : param_8_copy,
+  local_48 : allocated_string,
+  local_3c : vsnprintf_result,
+  local_38 : format_string_address_copy_2,
+  local_30 : string_object_address_copy,
+  local_28 : constant_0x30,
+  local_24 : constant_0x10,
+  local_20 : stack_pointer_08,
+  local_18 : format_buffer_copy,
+  local_10 : stack_chk_guard_copy,
+}
+Reasoning:
+- `param_X`: These parameters are passed to the function and represent different aspects of the input data. Naming them based on their context makes the code more readable.
+- `in_AL`: This variable seems to represent a flag indicating if a character is not null. Renaming it to `is_not_null_char` provides clarity.
+- `local_f8`: This seems to be a buffer for the format string. Renaming it to `format_buffer` describes its purpose.
+- `local_e8`, `local_e0`, `local_d8`, `local_d0`: These variables seem to be copies of some parameters. Adding `_copy` to their names makes this clear.
+- `local_c8`, `local_b8`, `local_a8`, `local_98`, `local_88`, `local_78`, `local_68`, `local_58`: These seem to be copies of specific parameters or values. Naming them as `param_X_copy` indicates their origins.
+- `local_48`: This seems to be a dynamically allocated string. Naming it `allocated_string` describes its purpose.
+- `local_3c`: This variable appears to hold the result of `vsnprintf`. Naming it `vsnprintf_result` clarifies its role.
+- `local_38`: This seems to be a copy of the format string address. Adding `_copy_2` distinguishes it from the original.
+- `local_30`: This seems to be a copy of the string object address. Adding `_copy` makes it clear.
+- `local_28`, `local_24`: These seem to hold constants. Naming them `constant_0x30` and `constant_0x10` respectively indicates their values.
+- `local_20`, `local_18`: These seem to be related to stack pointers and format buffers. Renaming them to `stack_pointer_08` and `format_buffer_copy` describes their roles.
+- `local_10`: This seems to be a copy of the stack check guard. Renaming it to `stack_chk_guard_copy` clarifies its purpose.

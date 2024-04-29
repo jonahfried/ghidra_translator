@@ -1,0 +1,60 @@
+```python
+{
+  'param_1': 'string_object',  # The first argument is the string object being formatted.
+  'param_2': 'format_string',  # The second argument is the format string.
+  'param_3': 'format_arg_1',  # The third argument is the first format argument.
+  'param_4': 'format_arg_2',  # The fourth argument is the second format argument.
+  'param_5': 'format_arg_3',  # The fifth argument is the third format argument.
+  'param_6': 'format_arg_4',  # The sixth argument is the fourth format argument.
+  'param_7': 'format_arg_5',  # The seventh argument is the fifth format argument.
+  'param_8': 'format_arg_6',  # The eighth argument is the sixth format argument.
+  'param_9': 'formatted_string_length',  # The ninth argument is the length of the formatted string.
+  'param_10': 'formatted_string',  # The tenth argument is the formatted string itself.
+  'param_11': 'var_arg_11',  # The eleventh argument is unknown.
+  'param_12': 'var_arg_12',  # The twelfth argument is unknown.
+  'param_13': 'var_arg_13',  # The thirteenth argument is unknown.
+  'param_14': 'var_arg_14',  # The fourteenth argument is unknown.
+  'in_AL': 'non_zero_flag',  # This variable is non-zero if the function was called with a non-zero value.
+  'local_f8': 'format_args',  # This buffer is used to store the format arguments.
+  'local_e8': 'var_arg_11_copy',  # Copy of the eleventh argument.
+  'local_e0': 'var_arg_12_copy',  # Copy of the twelfth argument.
+  'local_d8': 'var_arg_13_copy',  # Copy of the thirteenth argument.
+  'local_d0': 'var_arg_14_copy',  # Copy of the fourteenth argument.
+  'local_c8': 'string_object_copy',  # Copy of the first argument.
+  'local_b8': 'format_string_copy',  # Copy of the second argument.
+  'local_a8': 'format_arg_1_copy',  # Copy of the third argument.
+  'local_98': 'format_arg_2_copy',  # Copy of the fourth argument.
+  'local_88': 'format_arg_3_copy',  # Copy of the fifth argument.
+  'local_78': 'format_arg_4_copy',  # Copy of the sixth argument.
+  'local_68': 'format_arg_5_copy',  # Copy of the seventh argument.
+  'local_58': 'format_arg_6_copy',  # Copy of the eighth argument.
+  'local_48': 'formatted_string_buffer',  # Buffer to store the formatted string.
+  'local_3c': 'formatted_string_length_2',  # Another variable for the formatted string length.
+  'local_38': 'formatted_string_pointer',  # Pointer to the formatted string.
+  'local_30': 'formatted_string_length_3',  # Yet another variable for the formatted string length.
+  'local_28': 'format_specifier_length',  # Length of the format specifier.
+  'local_24': 'initial_buffer_size',  # Initial size of the buffer for the formatted string.
+  'local_20': 'stack_pointer',  # Pointer to the stack.
+  'local_18': 'format_args_pointer',  # Pointer to the format arguments.
+  'local_10': 'stack_guard_value',  # Value of the stack guard.
+}
+```
+
+## Reasoning behind the inferred names:
+
+* `string_object`: This name is inferred from the first argument to the function, which is expected to be a string object.
+* `format_string`: This name is inferred from the second argument to the function, which is expected to be a format string.
+* `format_arg_1`, `format_arg_2`, ..., `format_arg_6`: These names are inferred from the remaining arguments to the function, which are expected to be the format arguments.
+* `non_zero_flag`: This name is inferred from the variable `in_AL`, which is non-zero if the function was called with a non-zero value.
+* `format_args`: This name is inferred from the buffer `local_f8`, which is used to store the format arguments.
+* `var_arg_11_copy`, `var_arg_12_copy`, ..., `var_arg_14_copy`: These names are inferred from the variables `local_e8`, `local_e0`, `local_d8`, and `local_d0`, which are copies of the eleventh, twelfth, thirteenth, and fourteenth arguments, respectively.
+* `string_object_copy`, `format_string_copy`, ..., `format_arg_6_copy`: These names are inferred from the variables `local_c8`, `local_b8`, ..., `local_58`, which are copies of the first, second, ..., and eighth arguments, respectively.
+* `formatted_string_buffer`: This name is inferred from the variable `local_48`, which is used to store the formatted string.
+* `formatted_string_length_2`: This name is inferred from the variable `local_3c`, which is another variable for the formatted string length.
+* `formatted_string_pointer`: This name is inferred from the variable `local_38`, which is a pointer to the formatted string.
+* `formatted_string_length_3`: This name is inferred from the variable `local_30`, which is yet another variable for the formatted string length.
+* `format_specifier_length`: This name is inferred from the variable `local_28`, which is the length of the format specifier.
+* `initial_buffer_size`: This name is inferred from the variable `local_24`, which is the initial size of the buffer for the formatted string.
+* `stack_pointer`: This name is inferred from the variable `local_20`, which is a pointer to the stack.
+* `format_args_pointer`: This name is inferred from the variable `local_18`, which is a pointer to the format arguments.
+* `stack_guard_value`: This name is inferred from the variable `local_10`, which is the value of the stack guard.

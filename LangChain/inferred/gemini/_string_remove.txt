@@ -1,0 +1,19 @@
+## Mapping of placeholder names to descriptive, concise names (snake case):
+
+```
+{
+  "local_28": "current_substring_position", 
+  "param_1": "string_object", 
+  "param_2": "substring", 
+  "sVar1": "substring_length", 
+  "sVar2": "remaining_string_length", 
+}
+```
+
+## Reasoning:
+
+* **local_28**: This variable stores the current position within the string_object where the function is searching for the substring. It starts at the beginning of the string and is updated after each successful match. The name "current_substring_position" accurately reflects the purpose of this variable.
+* **param_1**: This variable points to the string_object being operated on. The name is kept as "string_object" for clarity and consistency.
+* **param_2**: This variable points to the substring that is being searched for within the string_object. The name is kept as "substring" for clarity.
+* **sVar1**: This variable stores the length of the substring. It is used for calculations and comparisons during the search process. The name is changed to "substring_length" to be more descriptive. 
+* **sVar2**: This variable stores the length of the remaining string after a successful substring match. It is used to perform memory move operations accurately. The name is changed to "remaining_string_length" to be more descriptive. 

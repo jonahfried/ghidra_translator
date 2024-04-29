@@ -1,0 +1,62 @@
+Here's the mapping of placeholder variable names to descriptive names, along with the reasoning behind each name:
+
+{
+  param_1: format_arg1,    // Assuming these are format arguments passed to the function
+  param_2: format_arg2,
+  param_3: format_arg3,
+  param_4: format_arg4,
+  param_5: format_arg5,
+  param_6: format_arg6,
+  param_7: format_arg7,
+  param_8: format_arg8,
+  param_9: num_strings,    // Represents the number of strings to join
+  param_10: extra_arg1,    // Extra arguments passed to the function
+  param_11: extra_arg2,
+  param_12: extra_arg3,
+  param_13: extra_arg4,
+  param_14: extra_arg5,
+  in_AL: is_formatted,     // Indicates if the function uses formatted arguments
+  local_158: string_ptr,   // Pointer to a string
+  local_140: string_ptr_tmp,  // Temporary pointer to a string
+  local_128: stack_args,   // Array to store arguments passed on the stack
+  local_108: extra_stack_arg1,  // Extra arguments stored on the stack
+  local_100: extra_stack_arg2,
+  local_f8: format_stack_arg1,  // Format arguments stored on the stack
+  local_e8: format_stack_arg2,
+  local_d8: format_stack_arg3,
+  local_c8: format_stack_arg4,
+  local_b8: format_stack_arg5,
+  local_a8: format_stack_arg6,
+  local_98: format_stack_arg7,
+  local_88: format_stack_arg8,
+  local_78: result_string, // The resulting joined string
+  local_70: string_data_ptr,  // Pointer to the data of a string
+  local_68: string_index,  // Index variable for iterating over strings
+  local_60: output_ptr,    // Pointer to the output buffer
+  local_58: output_buffer, // Buffer to store the joined string
+  local_50: string_ptr_val,  // Value of a string pointer
+  local_48: string_index,  // Index variable for iterating over strings
+  local_40: total_length,  // Total length of all the strings
+  local_38: num_strings_copy,  // Copy of the number of strings
+  local_30: return_value,  // Return value of the function
+  local_28: stack_offset,  // Offset for accessing arguments on the stack
+  local_24: stack_size,    // Size of the stack arguments
+  local_20: stack_ptr,     // Pointer to the current position on the stack
+  local_18: stack_args_ptr,  // Pointer to the stack arguments array
+  local_10: stack_guard    // Stack guard value for detecting stack corruption
+}
+
+The reasoning behind the names:
+- `param_1` to `param_8` are assumed to be format arguments based on the conditional assignment using `in_AL`.
+- `param_9` is named `num_strings` because it is used as the loop condition for iterating over strings.
+- `param_10` to `param_14` are considered extra arguments passed to the function.
+- `in_AL` is named `is_formatted` as it seems to indicate whether formatted arguments are used.
+- `local_158`, `local_140`, `local_50`, and `local_70` are pointers related to strings, hence named accordingly.
+- `local_128` is an array used to store arguments passed on the stack, named `stack_args`.
+- `local_108` and `local_100` are extra arguments stored on the stack.
+- `local_f8` to `local_88` are format arguments stored on the stack.
+- `local_78` is the resulting joined string, named `result_string`.
+- `local_68` and `local_48` are index variables used for iterating over strings.
+- `local_60` and `local_58` are related to the output buffer for the joined string.
+- `local_40` stores the total length of all the strings.
+- `local_38` is a copy

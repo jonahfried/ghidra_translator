@@ -1,0 +1,44 @@
+## Variable Mapping and Reasoning
+
+```
+{
+  "param_1": "arg_1",                     // 1st function argument
+  "param_2": "arg_2",                     // 2nd function argument
+  "param_3": "arg_3",                     // 3rd function argument
+  "param_4": "arg_4",                     // 4th function argument
+  "param_5": "arg_5",                     // 5th function argument
+  "param_6": "arg_6",                     // 6th function argument
+  "param_7": "arg_7",                     // 7th function argument
+  "param_8": "arg_8",                     // 8th function argument
+  "param_9": "num_args",                  // Number of arguments to join
+  "param_10": "arg_9",                    // 9th function argument
+  "param_11": "arg_10",                   // 10th function argument
+  "param_12": "arg_11",                   // 11th function argument
+  "param_13": "arg_12",                   // 12th function argument
+  "param_14": "arg_13",                   // 13th function argument
+  "in_AL": "is_restarted",                 // Flag indicating if function was restarted
+  "local_158": "current_arg_ptr",          // Pointer to current argument being processed
+  "local_140": "arg_ptr_array_base_addr", // Base address of array holding argument pointers
+  "local_128": "arg_ptr_array",          // Array containing pointers to each argument string
+  "local_108": "arg_14",                   // 14th function argument
+  "local_100": "arg_15",                   // 15th function argument
+  "local_68": "current_arg_index",         // Index of the current argument being processed
+  "local_60": "joined_string_buffer",     // Buffer for storing the joined string
+  "local_58": "allocated_memory",         // Pointer to allocated memory for joined string
+  "local_48": "i",                         // Loop counter for iterating through arguments
+  "local_40": "total_arg_lengths",         // Total length of all arguments combined
+  "local_28": "arg_ptr_array_index",       // Index into argument pointer array
+  "local_20": "arg_ptr_array_base",       // Pointer to the base of argument pointer array
+  "local_78": "joined_string",             // Resulting joined string
+}
+```
+
+## Reasoning for Each Name:
+
+* Most names are based on their function in the code: "arg_n" for function arguments, "arg_ptr_array" for the array holding pointers, etc.
+* "is_restarted" reflects the flag's purpose.
+* "total_arg_lengths" is named after the variable's calculated value.
+* "joined_string_buffer" and "allocated_memory" describe the allocated memory's purpose.
+* "current_arg_index" and "current_arg_ptr" describe their roles in the loop iterating through arguments.
+* "joined_string" reflects the final output of the function.
+

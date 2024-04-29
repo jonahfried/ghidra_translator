@@ -1,0 +1,16 @@
+{
+  param_1 : string_pointer,
+  param_2 : search_string,
+  param_3 : position,
+  iVar1 : comparison_result,
+  sVar2 : search_string_length,
+  local_40 : adjusted_position,
+  local_34 : current_index,
+}
+- `param_1`: Renamed to `string_pointer` because it seems to be a pointer to a string object.
+- `param_2`: Renamed to `search_string` as it is used for searching within the string.
+- `param_3`: Renamed to `position` since it represents a position within the string.
+- `iVar1`: Renamed to `comparison_result` to indicate it holds the result of a comparison operation.
+- `sVar2`: Renamed to `search_string_length` to indicate it holds the length of the search string.
+- `local_40`: Renamed to `adjusted_position` as it stores the adjusted position for searching.
+- `local_34`: Renamed to `current_index` as it is used as the index in the loop.

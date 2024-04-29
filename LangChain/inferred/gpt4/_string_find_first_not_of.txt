@@ -1,0 +1,18 @@
+{
+  param_1 : string_obj_ptr,
+  param_2 : target_str,
+  param_3 : str_len,
+
+  iVar1 : comparison_result,
+  sVar2 : target_str_len,
+  local_38 : current_pos,
+  local_c : result,
+}
+- `param_1`: Renamed to `string_obj_ptr` because it seems to be a pointer to a string object.
+- `param_2`: Renamed to `target_str` because it is the string that we are searching for in the object.
+- `param_3`: Renamed to `str_len` as it represents the length of the string object.
+
+- `iVar1`: Renamed to `comparison_result` because it holds the result of a comparison operation.
+- `sVar2`: Renamed to `target_str_len` as it represents the length of the target string.
+- `local_38`: Renamed to `current_pos` as it keeps track of the current position in the string object.
+- `local_c`: Renamed to `result` as it holds the final result of the function.

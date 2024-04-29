@@ -1,0 +1,22 @@
+Here's the mapping of placeholder variable names to descriptive names along with their types and reasoning:
+
+{
+  param_1: string_ptr (char**),
+  param_2: substring (char*),
+  param_3: end_pos (char*),
+  bVar1: is_valid_position (bool),
+  local_38: last_occurrence (char*),
+  local_2c: last_pos (int),
+  local_c: return_value (int)
+}
+
+Reasoning:
+1. param_1 -> string_ptr: It's a pointer to a pointer to a char, which suggests it's a pointer to a string object.
+2. param_2 -> substring: It's used as the substring to search for within the string.
+3. param_3 -> end_pos: It represents the ending position or limit for the search.
+4. bVar1 -> is_valid_position: It's a boolean variable used to check if the position of the substring is within the valid range.
+5. local_38 -> last_occurrence: It stores the pointer to the last occurrence of the substring found using _strstr.
+6. local_2c -> last_pos: It keeps track of the position of the last occurrence of the substring.
+7. local_c -> return_value: It's the variable that holds the final return value of the function.
+
+The function seems to be implementing a find_last_of operation on a string, where it searches for the last occurrence of a substring within a given string, up to a specified ending position. It performs error checks for null pointers and out-of-bounds positions. The function returns the position of the last occurrence of the substring if found, or -1 if an error occurs or the substring is not found.

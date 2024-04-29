@@ -1,0 +1,44 @@
+## Mapping of Placeholder Names to Descriptive Names
+
+Here's the mapping of placeholder names to descriptive names and types, along with explanations:
+
+```
+{
+  "param_1": "string_ptr", // Pointer to the main string
+  "param_2": "substring_ptr", // Pointer to the substring to search for
+  "pcVar1": "substring_match", // Pointer to the first occurrence of the substring
+  "local_9": "match_found", // Boolean indicating if the substring was found
+}
+```
+
+## Reasoning for Inferred Names
+
+### `param_1`: `string_ptr`
+
+* This variable is a pointer to a character array (`char **`), which is typically used to represent a string in C.
+* The name `string_ptr` explicitly indicates that it holds a pointer to a string.
+
+### `param_2`: `substring_ptr`
+
+* Similar to `param_1`, this variable is also a pointer to a character array, representing the substring to be searched for.
+* The name `substring_ptr` clarifies its purpose and distinguishes it from the main string.
+
+### `pcVar1`: `substring_match`
+
+* This variable stores the result of the `_strstr` function, which returns a pointer to the first occurrence of the substring in the main string.
+* The name `substring_match` reflects the variable's role in indicating the match.
+
+### `local_9`: `match_found`
+
+* This variable is a boolean flag set to `true` if the substring is found and `false` otherwise.
+* The name `match_found` clearly conveys its purpose and state.
+
+## Additional Notes
+
+* The code snippet provided implements a function called `_string_contains`, which checks if a substring exists within a given string.
+* The function returns `true` if the substring is found, `false` otherwise.
+* The function handles cases where either the main string or the substring is null, printing error messages to the standard error stream.
+
+## Conclusion
+
+By using descriptive and concise names for the placeholder variables, the code becomes more readable and understandable. This improves maintainability and helps others comprehend the logic and purpose of the code more easily.

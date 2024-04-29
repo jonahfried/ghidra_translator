@@ -1,0 +1,12 @@
+{
+  param_1 : string_buffer,
+  param_2 : str_to_append,
+  sVar1 : appended_str_length,
+  lVar2 : new_buffer_size,
+  lVar3 : new_buffer_address,
+}
+- `param_1` is a pointer to a string buffer, so `string_buffer` is a more descriptive name.
+- `param_2` represents the string that needs to be appended, so `str_to_append` is a concise name.
+- `sVar1` holds the length of the string to be appended, hence `appended_str_length`.
+- `lVar2` denotes the new size of the buffer after appending, hence `new_buffer_size`.
+- `lVar3` holds the address of the new buffer after appending, so `new_buffer_address` is a fitting name.

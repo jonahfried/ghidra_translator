@@ -1,0 +1,15 @@
+{
+  param_1 : string_object_ptr,
+  param_2 : total_length,
+  param_3 : padding_char,
+  pvVar1 : current_length,
+  pvVar2 : new_length,
+  pvVar3 : new_string_ptr,
+}
+Explanation:
+- `param_1`: The function argument `param_1` seems to be a pointer to a string object, so `string_object_ptr` is a descriptive name.
+- `param_2`: The function argument `param_2` is likely representing the total length of the padded string, so `total_length` is a suitable name.
+- `param_3`: The function argument `param_3` appears to be the character used for padding, so `padding_char` is a clear name.
+- `pvVar1`: This variable seems to represent the current length of the string object, so `current_length` is a logical choice.
+- `pvVar2`: This variable seems to represent the new length after padding, so `new_length` is an appropriate name.
+- `pvVar3`: This variable seems to hold the pointer to the newly allocated padded string, so `new_string_ptr` is a descriptive name.
