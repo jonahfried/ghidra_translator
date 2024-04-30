@@ -19,7 +19,7 @@ I would like the mapping to be in the following format:
 Please also explain the reasoning behind each inferred name. Please don't be lazy.
 '''
 
-gpt4 = ChatOpenAI()
+gpt4 = ChatOpenAI(model="gpt-4-turbo")
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "{system}"),
@@ -32,6 +32,8 @@ chain = prompt | gpt4 | output_parser
 
 # Get a list of all .c files in the ./decompiled directory
 c_files = glob.glob('./decompiled/*.c')
+
+print(len(c_files))
 
 for c_file in c_files:
     # Read the contents of the .c file
@@ -48,7 +50,7 @@ for c_file in c_files:
     base_name = os.path.basename(c_file).split('.')[0]
 
     # Create a .txt file in the ./inferred directory with the same base name
-    with open(f'./inferred/gpt4/{base_name}.txt', 'w') as file:
+    with open(f'./inferred/gpt4_actual/{base_name}.txt', 'w') as file:
         file.write(result)
     
-    print(f"Inferred mapping written to ./inferred/gpt4/{base_name}.txt")
+    print(f"Inferred mapping written to ./inferred/gpt4_actual/{base_name}.txt")

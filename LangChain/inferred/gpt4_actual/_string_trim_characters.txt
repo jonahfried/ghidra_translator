@@ -1,0 +1,45 @@
+Based on the provided decompiled C code, let's analyze each variable and parameter to infer their names and purposes:
+
+1. `param_1`:
+   - This is a pointer to a pointer to a `char`. It suggests that `param_1` is likely pointing to a string and possibly also used to store related metadata (like string length).
+   - **Reasoning**: The use of `*param_1` indicates dereferencing to get a string, and `param_1[1]` is used in pointer arithmetic, probably for string length or a similar attribute.
+   - **Inferred Name**: `string_ref`
+
+2. `param_2`:
+   - This is a pointer to a `char` and is used with `_strchr`, indicating that it's a string of characters to be searched within another string.
+   - **Reasoning**: It's used to check if characters from this string are present in the main string (`*param_1`).
+   - **Inferred Name**: `trim_chars`
+
+3. `pcVar1`:
+   - This variable is used to store the result of `_strchr`, which returns a pointer to the first occurrence of a character within a string.
+   - **Reasoning**: It's a pointer to a character, used temporarily to hold search results.
+   - **Inferred Name**: `found_char_ptr`
+
+4. `bVar2`:
+   - This is a boolean variable used to store conditions related to character findings.
+   - **Reasoning**: It's set based on whether `found_char_ptr` is not null, indicating if a character was found or not.
+   - **Inferred Name**: `is_char_found`
+
+5. `local_28`:
+   - This pointer is used to navigate from the end of the string towards the beginning.
+   - **Reasoning**: It starts at the last character of the string and moves backwards, used in conjunction with `local_20` to trim characters.
+   - **Inferred Name**: `end_ptr`
+
+6. `local_20`:
+   - This pointer is used to navigate from the beginning of the string toward the end.
+   - **Reasoning**: It starts at the first character of the string and moves forwards, used to trim leading characters.
+   - **Inferred Name**: `start_ptr`
+
+Here is the mapping in the requested format:
+```json
+{
+  "param_1": "string_ref",
+  "param_2": "trim_chars",
+  "pcVar1": "found_char_ptr",
+  "bVar2": "is_char_found",
+  "local_28": "end_ptr",
+  "local_20": "start_ptr"
+}
+```
+
+Each name was chosen to clearly reflect the role of the variable in the context of the function, which aims to trim specified characters from both ends of a string.

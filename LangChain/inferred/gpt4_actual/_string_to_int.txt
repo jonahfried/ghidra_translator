@@ -1,0 +1,25 @@
+Based on the provided decompiled code, here is the mapping from placeholder variable names to descriptive, concise names, and the reasoning behind each choice:
+
+```json
+{
+  "param_1": "string_ptr",
+  "uVar1": "is_empty_result",
+  "local_c": "result"
+}
+```
+
+### Reasoning:
+
+1. **param_1**:  
+   - **Type**: `char **` implies that this is a pointer to a char pointer, which is commonly used to handle strings in C.
+   - **Inferred Name**: `string_ptr` because it is a pointer to a string which is being converted to an integer. The name emphasizes that it's a pointer to a character string.
+
+2. **uVar1**:  
+   - **Type**: `ulong` (unsigned long) indicates that this variable is used to store a numeric result, probably from a function as seen in the code.
+   - **Inferred Name**: `is_empty_result` because this variable stores the result of `_string_empty(param_1)`, which likely checks if the string is empty. The result of this function is used to determine further actions (whether to convert the string to an integer or report an error). The name reflects its role in storing the outcome of the emptiness check.
+
+3. **local_c**:  
+   - **Type**: `int` suggests that this variable is used to store an integer, which in this context is the output of the function.
+   - **Inferred Name**: `result` as it is clearly used to store the final result of the function `_string_to_int`, which is either the converted integer from the string or `0` in case of errors (null or empty string). The name 'result' directly indicates its purpose in the function.
+
+These names help clarify the purpose of each variable within the function, making the code easier to understand and maintain.

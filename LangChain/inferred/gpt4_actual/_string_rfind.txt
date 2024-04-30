@@ -1,0 +1,51 @@
+From the provided decompiled function, let's analyze each placeholder and assign more descriptive names:
+
+1. `param_1`:
+   - **Type**: `long *`
+   - **Inferred Name**: `string_object_pointer`
+   - **Reasoning**: This pointer is likely pointing to a string object or structure, where the first element (dereferenced as `*param_1`) refers to the string data, and the second element (`param_1[1]`) indicates the string length or a related property.
+
+2. `param_2`:
+   - **Type**: `char *`
+   - **Inferred Name**: `search_string`
+   - **Reasoning**: This is a character array pointer used in string-related functions (`_strlen`, `_strncmp`), indicating it's the string to find within another string.
+
+3. `param_3`:
+   - **Type**: `ulong`
+   - **Inferred Name**: `start_position`
+   - **Reasoning**: This variable is used to determine the initial position from where the search should begin or end, suggesting it represents a starting index for searching.
+
+4. `iVar1`:
+   - **Type**: `int`
+   - **Inferred Name**: `compare_result`
+   - **Reasoning**: This variable holds the result of `_strncmp`, which compares two strings and returns an integer based on the comparison outcome.
+
+5. `sVar2`:
+   - **Type**: `size_t`
+   - **Inferred Name**: `search_string_length`
+   - **Reasoning**: This variable holds the result of `_strlen` applied to `param_2`, thus representing the length of the search string.
+
+6. `local_40`:
+   - **Type**: `ulong`
+   - **Inferred Name**: `adjusted_position`
+   - **Reasoning**: This variable adjusts the search start position based on the conditions (`param_3` and `param_1[1]`), ensuring it does not exceed valid bounds.
+
+7. `local_34`:
+   - **Type**: `int`
+   - **Inferred Name**: `search_index`
+   - **Reasoning**: This index is used in a loop to iterate backward through the string (from `adjusted_position`), suggesting it's the current search position within the string for the reverse find operation.
+
+Mapping in the requested format:
+```json
+{
+  "param_1": "string_object_pointer",
+  "param_2": "search_string",
+  "param_3": "start_position",
+  "iVar1": "compare_result",
+  "sVar2": "search_string_length",
+  "local_40": "adjusted_position",
+  "local_34": "search_index"
+}
+```
+
+This mapping provides a clearer understanding of each variable's role within the function, which appears to implement the reverse find operation for strings.

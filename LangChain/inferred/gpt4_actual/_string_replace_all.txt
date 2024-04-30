@@ -1,0 +1,25 @@
+In the provided function `_string_replace_all`, the following placeholder variable names need to be mapped to more descriptive names based on their usage within the function:
+
+1. `param_1`: This is a double pointer to a character, indicating it holds a reference to a string. From the context, it is clear that this is the string in which replacements will be made. Hence, a suitable name would be `target_string_ptr`.
+2. `param_2`: This is a single pointer to a character, used as the substring that needs to be replaced in `target_string_ptr`. Thus, a descriptive name would be `search_substring`.
+3. `param_3`: This variable is used as the replacement string in the function. It is a `long` type, which is likely a typo or a decompiler error, as string replacements typically involve characters. It should be a `char*` type, so a suitable name would be `replacement_string`.
+4. `puVar1`: This variable stores the result of `_string_create("")`, suggesting it’s used as a string object for accumulating results. A suitable name would be `result_string`.
+5. `pcVar2`: This variable is used to store the result of `_strstr(local_30, param_2)`, which locates the occurrence of the substring `param_2` in `local_30`. Thus, `substring_location` would be a descriptive name.
+6. `sVar3`: This variable holds the result of `_strlen(param_2)`, which is the length of the `search_substring`. A suitable name would be `search_substring_length`.
+7. `local_30`: This variable points to the current position in the target string from which the search for the next occurrence of the substring will begin. Thus, `current_position` is a descriptive name.
+
+Here is the mapping in the format specified:
+
+```json
+{
+  "param_1": "target_string_ptr",
+  "param_2": "search_substring",
+  "param_3": "replacement_string",
+  "puVar1": "result_string",
+  "pcVar2": "substring_location",
+  "sVar3": "search_substring_length",
+  "local_30": "current_position"
+}
+```
+
+This mapping improves code readability and understandability by using meaningful names that reflect the purpose and usage of each variable, making the function easier to maintain and debug.

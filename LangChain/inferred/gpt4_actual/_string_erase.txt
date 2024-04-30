@@ -1,0 +1,24 @@
+The code provided is a function that performs an erase operation on a string-like object. Here is the analysis and renaming based on the context of the code:
+
+1. **param_1**: This parameter appears to be a pointer to a structure or array related to a string object. The first element of this array (`*param_1`) is likely the character array (i.e., the actual string), and the second element (`param_1[1]`) represents the length of the string. Thus, a suitable name could be `string_object`.
+
+2. **param_2**: This parameter is used as an index or position in the string from which erasure should begin. Therefore, a descriptive name would be `erase_start_index`.
+
+3. **param_3**: This parameter represents the number of characters to erase from the string starting at `param_2`. A suitable name would be `num_chars_to_erase`.
+
+4. **local_20**: This local variable seems to adjust the number of characters to be erased based on the available number of characters from `erase_start_index` to the end of the string. It is used to ensure that the erase operation does not exceed the bounds of the string. A suitable name could be `adjusted_erase_length`.
+
+The code checks for null pointer, calculates the effective number of characters to erase considering string boundaries, and then performs the erase operation using `memmove` to adjust the remaining characters in the string and updates the length accordingly.
+
+Here's the variable mapping:
+
+```json
+{
+  "param_1": "string_object",
+  "param_2": "erase_start_index",
+  "param_3": "num_chars_to_erase",
+  "local_20": "adjusted_erase_length"
+}
+```
+
+This mapping makes the code's intent clearer, improving readability and maintainability.
