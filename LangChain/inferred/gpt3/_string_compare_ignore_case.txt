@@ -1,0 +1,8 @@
+{
+  param_1 : first_string_pointer,
+  param_2 : second_string_pointer,
+  local_c : comparison_result,
+}
+Reasoning:
+- `param_1` and `param_2` are pointers to strings, so `first_string_pointer` and `second_string_pointer` are more descriptive.
+- `local_c` stores the result of the comparison, so `comparison_result` is a concise and clear name.

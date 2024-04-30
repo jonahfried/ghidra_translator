@@ -1,10 +1,22 @@
+The provided code appears to be a function for trimming whitespace characters from the right end of a string. Here's the mapping of the placeholder variable names to more descriptive ones:
+
+```json
 {
-  param_1 : string_pointer,
-  iVar1 : space_check_result,
-  bVar2 : is_space,
-  local_18 : current_length,
+  "param_1" : "string_ptr",
+  "iVar1" : "is_space_result",
+  "bVar2" : "is_space",
+  "local_18" : "trim_index"
 }
-- `param_1`: Renamed to `string_pointer` since it seems to be pointing to a string object.
-- `iVar1`: Renamed to `space_check_result` to indicate its purpose of checking if a character is a space.
-- `bVar2`: Renamed to `is_space` to indicate its purpose of storing whether a character is a space or not.
-- `local_18`: Renamed to `current_length` to clarify that it is holding the current length of the string being trimmed.
+```
+
+### Explanation of Inferred Names:
+
+1. **param_1**: This parameter is a pointer to a long, which is used to access the string and its length. Given the operations in the code, it likely points to a structure or array where the first element (`*param_1`) is the address of the string, and the second element (`param_1[1]`) is the length of the string. Thus, a good name for it is `string_ptr`.
+
+2. **iVar1**: This integer variable is used to store the result of the `_isspace` function, which checks if a given character is a whitespace character. The name `is_space_result` is chosen to reflect that it temporarily holds whether the current character is a space or not.
+
+3. **bVar2**: This boolean variable is used to determine if the character at the current position is a whitespace character, based on the result from `_isspace`. Therefore, the name `is_space` is appropriate as it directly indicates that it's used to check if a character is a whitespace.
+
+4. **local_18**: This variable represents the current index in the string that is being checked and potentially modified (trimmed). It starts at the end of the string and moves backward. The name `trim_index` is suitable because it indicates the index used for trimming characters from the string.
+
+By using these names, the function's code becomes more readable and easier to understand.

@@ -1,0 +1,8 @@
+{
+  param_1 : string_pointer,
+  local_20 : index,
+  local_9 : is_lower_case,
+}
+- `param_1`: Renamed to `string_pointer` because it seems to be a pointer to a string.
+- `local_20`: Renamed to `index` because it is used as an index in a loop.
+- `local_9`: Renamed to `is_lower_case` because it likely holds a boolean value indicating whether the string contains only lowercase characters.

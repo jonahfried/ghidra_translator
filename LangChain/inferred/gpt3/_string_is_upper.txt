@@ -1,0 +1,8 @@
+{
+  param_1 : string_ptr,
+  local_20 : index,
+  local_9 : is_upper,
+}
+- `param_1`: Inferred as `string_ptr` because the variable `param_1` is being compared to a null pointer and then dereferenced to access characters of a string.
+- `local_20`: Inferred as `index` because it is being used as an index to iterate over the characters of the string pointed to by `param_1`.
+- `local_9`: Inferred as `is_upper` since it is set to 1 if all characters in the string are uppercase and 0 otherwise.

@@ -1,7 +1,24 @@
+Here's the analysis of the provided function `_string_is_less` to infer the types and purposes of the variables and parameters:
+
+1. **Function Name and Purpose**: The function is named `_string_is_less`, which suggests it determines if one string is lexicographically less than another string. This is a common utility in sorting or comparing strings.
+
+2. **Parameters**:
+    - `param_1` and `param_2`: Both are of type `undefined8`. This generally indicates an 8-byte type, likely a pointer to a string (given the context of string comparison). Since these are being compared, it makes sense to name them `string1` and `string2` respectively.
+    
+3. **Local Variables**:
+    - `iVar1`: This is an integer variable that stores the result of `_string_compare(param_1, param_2)`. The function `_string_compare` likely returns an integer indicating the result of the comparison: negative if the first string is less, zero if equal, and positive if the first is greater. Naming it `compare_result` would make its purpose clear.
+
+4. **Return Type**:
+    - The function returns a boolean value, which is a result of the comparison `iVar1 < 0`. This means it returns `true` if the first string (`string1`) is lexicographically less than the second string (`string2`), and `false` otherwise.
+
+Mapping in the requested format with reasoning provided:
+
+```json
 {
-  param_1 : first_string_address,
-  param_2 : second_string_address,
-  iVar1 : comparison_result,
+  "param_1": "string1",
+  "param_2": "string2",
+  "iVar1": "compare_result"
 }
-- `param_1` and `param_2` are addresses to strings, hence `first_string_address` and `second_string_address` respectively.
-- `iVar1` seems to store the result of a comparison operation, so `comparison_result` is a suitable name.
+```
+
+This mapping provides clear, descriptive names that reflect the usage and context within the function, enhancing readability and maintainability of the code.

@@ -1,0 +1,10 @@
+{
+  param_1: source_string,
+  param_2: target_string,
+  uVar1: temp_value_1,
+  uVar2: temp_value_2,
+  uVar3: temp_value_3,
+  uVar4: temp_value_4,
+}
+- `param_1` and `param_2` represent two strings being swapped, hence `source_string` and `target_string` respectively.
+- `uVar1`, `uVar2`, `uVar3`, and `uVar4` are temporary values used for swapping, hence `temp_value_1`, `temp_value_2`, `temp_value_3`, and `temp_value_4` respectively.

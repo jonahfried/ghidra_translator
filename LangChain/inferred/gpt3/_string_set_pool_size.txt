@@ -1,0 +1,10 @@
+{
+  param_1: memory_pool,
+  param_2: new_size,
+  lVar1: result,
+  local_9: success,
+}
+- `param_1` is used as a memory pool, where it stores various memory-related information.
+- `param_2` represents the new size being passed as input.
+- `lVar1` is the result of various memory-related operations.
+- `local_9` is used to indicate the success status of the function.

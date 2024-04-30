@@ -1,0 +1,8 @@
+{
+  param_1 : input_str,
+  sVar1 : str_length,
+  local_10 : new_str_ptr,
+}
+- `param_1` is the input string that is being duplicated, hence `input_str`.
+- `sVar1` is assigned the length of the string, so `str_length`.
+- `local_10` is the pointer to the new duplicated string, so `new_str_ptr`.

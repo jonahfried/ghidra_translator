@@ -1,7 +1,21 @@
+This function, `_string_back`, seems to be designed to calculate an address or a position related to string operations. Here's a breakdown to infer the meaningful names for the variables and parameters:
+
+1. **param_1**: This variable is a pointer and is being dereferenced and used in arithmetic operations to yield a long value. Given the operations involve offsets and null checks, it likely represents a pointer to a structure or an array that holds information about a string. A common string-related structure contains pointers to characters and metadata like length. Hence, we might infer:
+   - `param_1` could be renamed to `string_info`, indicating it holds data about a string.
+
+2. **local_10**: This local variable is used to store the result calculated by the function, which possibly represents an address or an index, given it's calculated via pointer arithmetic. The function's name `_string_back` suggests that this value might represent the "last valid character position" of a string. However, it's important to note that:
+   - If `param_1` points to a structure where `param_1[0]` is the base address of the string and `param_1[1]` is the length of the string, then `*param_1 + param_1[1] - 1` calculates the address of the last character of the string (assuming the string starts at index 0 and ends at index length-1).
+   - Hence, `local_10` could be renamed to `last_char_position`, indicating its role in storing the position of the last character of the string.
+
+The revised mapping with these inferred names and explanations would look like this:
+
+```json
 {
-  param_1 : array_ptr_to_long,
-  local_10 : result_value,
+  "param_1" : "string_info",
+  "local_10" : "last_char_position"
 }
-Reasoning:
-- `param_1` is a pointer to a long array, so `param_1` is inferred to be `array_ptr_to_long`.
-- `local_10` seems to store the result of the function, so `local_10` is inferred to be `result_value`.
+```
+
+Explanation:
+- **string_info**: A pointer that likely points to a structure or array containing information about a string, such as its base address and length.
+- **last_char_position**: Stores the position/address of the last character in the string, calculated based on the string's base address and length. This is inferred from the operation `*string_info + string_info[1] - 1`, which adjusts for zero-based indexing.

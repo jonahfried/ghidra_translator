@@ -1,0 +1,5 @@
+{
+  param_1 : string_ptr,
+}
+Explanation:
+- `param_1` is the only parameter in the function `_string_trim`, and based on its usage in the function, it is inferred to be a pointer to a string object. Therefore, `param_1` can be renamed to `string_ptr`.

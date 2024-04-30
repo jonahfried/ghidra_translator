@@ -1,0 +1,10 @@
+{
+  param_1 : string_ptr,
+  iVar1 : isspace_result,
+  bVar2 : is_whitespace,
+  local_18 : trim_index,
+}
+- `param_1`: Renamed to `string_ptr` as it seems to be pointing to a string object being trimmed.
+- `iVar1`: Renamed to `isspace_result` as it likely stores the result of the `_isspace` function.
+- `bVar2`: Renamed to `is_whitespace` as it seems to be a boolean flag indicating if the character at a specific index is whitespace.
+- `local_18`: Renamed to `trim_index` as it appears to track the index of the character being checked for trimming.

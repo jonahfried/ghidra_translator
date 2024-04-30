@@ -1,0 +1,15 @@
+{
+  param_1 : string_array,
+  param_2 : substring,
+  sVar1 : substring_length,
+  local_30 : current_position,
+  local_28 : count,
+  local_10 : result,
+}
+Explanation:
+- `param_1` is a pointer to an array of strings, so `string_array` is a descriptive name.
+- `param_2` is a pointer to a string, which is used as a substring, so `substring` is an appropriate name.
+- `sVar1` is used to store the length of the substring, so `substring_length` is a suitable name.
+- `local_30` keeps track of the current position while iterating over the string array, hence `current_position` is a fitting name.
+- `local_28` is used to count occurrences of the substring, so `count` is a concise name.
+- `local_10` stores the final result, so `result` is a clear name.

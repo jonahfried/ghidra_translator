@@ -1,0 +1,22 @@
+{
+  param_1: input_ptr,
+  uVar1: is_empty,
+  lVar2: converted_value,
+  local_2b: hex_char_1,
+  local_2a: hex_char_2,
+  local_29: unused_byte,
+  local_28: index,
+  local_20: hex_string,
+  local_18: string_ptr,
+  local_10: result,
+}
+- `param_1` is a pointer to the input string.
+- `uVar1` is a variable used to store the result of `_string_empty` function, so `is_empty` is a suitable name.
+- `lVar2` is a variable used to store the converted value from hex to decimal, so `converted_value` is a descriptive name.
+- `local_2b` represents the first character of a hex pair in the input string.
+- `local_2a` represents the second character of a hex pair in the input string.
+- `local_29` is an unused byte, likely for alignment or padding.
+- `local_28` is an index variable for the loop.
+- `local_20` is used to store the resulting hex string.
+- `local_18` is a pointer to the input string.
+- `local_10` is the final result returned by the function.

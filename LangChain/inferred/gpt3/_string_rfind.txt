@@ -1,0 +1,16 @@
+{
+  param_1 : string_obj_ptr,
+  param_2 : search_buffer,
+  param_3 : position,
+  iVar1 : comparison_result,
+  sVar2 : buffer_length,
+  local_40 : end_position,
+  local_34 : current_position,
+}
+- `param_1`: Renamed to `string_obj_ptr` because it seems to be a pointer to a string object.
+- `param_2`: Renamed to `search_buffer` as it is used to store the buffer being searched for.
+- `param_3`: Renamed to `position` as it represents a position in the search process.
+- `iVar1`: Renamed to `comparison_result` as it holds the result of a comparison operation.
+- `sVar2`: Renamed to `buffer_length` to represent the length of the buffer being searched.
+- `local_40`: Renamed to `end_position` as it seems to represent the end position for searching.
+- `local_34`: Renamed to `current_position` as it represents the current position in the search loop.

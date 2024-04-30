@@ -1,0 +1,11 @@
+{
+  param_1 : string_array,  // `param_1` is a pointer to an array of strings
+  param_2 : substring,  // `param_2` is a pointer to a substring
+  pcVar1 : substring_location,  // `pcVar1` holds the location of the substring in the string
+  local_9 : contains_substring,  // `local_9` represents whether the string contains the substring
+}
+Reasoning:
+- `param_1` is a pointer to an array of strings, so `string_array` describes it concisely and clearly.
+- `param_2` is a pointer to a substring, so `substring` is a descriptive name for it.
+- `pcVar1` holds the location of the substring in the string, therefore `substring_location` is a suitable name.
+- `local_9` is a boolean flag indicating whether the string contains the substring, so `contains_substring` accurately describes its purpose.

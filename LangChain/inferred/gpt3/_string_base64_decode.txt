@@ -1,0 +1,20 @@
+{
+  param_1 : encoded_str_ptr,
+  iVar1 : bit_shift_count,
+  pvVar2 : decoded_str_ptr,
+  local_39 : current_char,
+  local_38 : decoded_str_index,
+  local_30 : encoded_str_index,
+  local_28 : remaining_bits,
+  local_24 : current_bits,
+  local_10 : result,
+}
+- `param_1`: Renamed to `encoded_str_ptr` since it holds a pointer to the encoded string.
+- `iVar1`: Renamed to `bit_shift_count` since it likely represents the number of bits to shift.
+- `pvVar2`: Renamed to `decoded_str_ptr` since it points to the memory allocated for the decoded string.
+- `local_39`: Renamed to `current_char` since it stores the current character being processed.
+- `local_38`: Renamed to `decoded_str_index` since it tracks the index in the decoded string.
+- `local_30`: Renamed to `encoded_str_index` since it tracks the index in the encoded string.
+- `local_28`: Renamed to `remaining_bits` since it likely keeps track of remaining bits during decoding.
+- `local_24`: Renamed to `current_bits` since it stores the bits being processed.
+- `local_10`: Renamed to `result` since it holds the final result of the function.

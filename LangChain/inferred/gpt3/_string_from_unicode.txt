@@ -1,0 +1,11 @@
+{
+  param_1: wide_string,
+  sVar1: converted_length,
+  pcVar2: converted_string,
+  local_10: result,
+}
+Reasoning:
+- `param_1`: The function takes a parameter which is a wide string (`wchar_t*`), so it can be named `wide_string`.
+- `sVar1`: This variable stores the length of the converted string, so it can be named `converted_length`.
+- `pcVar2`: This variable stores the converted string, so it can be named `converted_string`.
+- `local_10`: This variable holds the result of the function, so it can be named `result`.

@@ -1,0 +1,8 @@
+{
+  param_1 : string1_ptr,
+  param_2 : string2_ptr,
+}
+Explanation:
+- `param_1` is a pointer to the first string object being concatenated, so `string1_ptr` is an appropriate name.
+- `param_2` is a pointer to the second string object being concatenated, so `string2_ptr` is an appropriate name.
+}

@@ -1,0 +1,23 @@
+{
+  param_1 : input_string,
+  param_2 : delimiter,
+  param_3 : splits_count,
+  pc_var1 : duplicated_string,
+  u_var2 : created_string,
+  local_58 : loop_index_1,
+  local_50 : loop_index_2,
+  local_40 : token,
+  local_30 : splits_count_calculated,
+  local_10 : splits_array,
+}
+Reasoning:
+- `param_1` is the input string that is being split.
+- `param_2` is the delimiter used to split the input string.
+- `param_3` is used to store the count of splits.
+- `pc_var1` is a pointer to a duplicated string for tokenization.
+- `u_var2` represents a created string during the process.
+- `local_58` is an index variable for the first loop.
+- `local_50` is an index variable for the second loop.
+- `local_40` represents the current token being processed.
+- `local_30` stores the calculated count of splits.
+- `local_10` is the array that holds the split strings.

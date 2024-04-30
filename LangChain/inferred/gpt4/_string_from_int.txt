@@ -1,10 +1,22 @@
+Here's the mapping for the provided code based on context and functionality:
+
+```
 {
-  param_1 : value_to_convert,
-  uVar1 : converted_string,
-  local_1c : formatted_string,
-  local_10 : stack_chk_guard_copy,
+  "param_1": "input_integer",
+  "uVar1": "result_string",
+  "local_1c": "formatted_string_buffer",
+  "local_10": "stack_check_original"
 }
-- `param_1` : This variable seems to contain the value that needs to be converted to a string. Renaming it to `value_to_convert` makes its purpose clearer.
-- `uVar1` : This variable appears to store the result of converting the integer value to a string. Renaming it to `converted_string` describes its content.
-- `local_1c` : This variable holds the formatted string created from the integer value. Renaming it to `formatted_string` reflects its purpose.
-- `local_10` : This variable seems to be a copy of the stack guard value for comparison later. Renaming it to `stack_chk_guard_copy` describes its purpose in the function.
+```
+
+Explanation of each inferred name:
+
+1. **param_1**: The function is named `_string_from_int`, suggesting it takes an integer and converts it to a string. Thus, `param_1` is the integer input to this function. Naming it `input_integer` makes its purpose clear.
+
+2. **uVar1**: This variable holds the return value from `_string_create`, which appears to take a string (formed by formatting `param_1`) and possibly creates a new string object or similar structure. Given that it's returned by the function, naming it `result_string` explains that it stores the resultant string object derived from the input integer.
+
+3. **local_1c**: This local array is used as the target buffer in the `___sprintf_chk` function call, where `param_1` is formatted as a string (denoted by `"%d"`). The name `formatted_string_buffer` clearly describes its role as a buffer to store the formatted string version of `input_integer`.
+
+4. **local_10**: This variable is used to store the original value of a stack check guard (likely for detecting stack corruption or overflows). It's checked again at the end of the function to ensure it hasn't changed, which if it has, triggers `___stack_chk_fail` to indicate a stack overflow or corruption. Naming it `stack_check_original` indicates that this variable holds the original reference value for the stack check.
+
+This mapping and naming scheme enhances the readability and maintainability of the code by clearly describing the purpose and use of each variable.

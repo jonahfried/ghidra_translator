@@ -1,0 +1,7 @@
+{
+  param_1 : input_ptr,
+  local_10 : result_str,
+}
+Reasoning:
+- `param_1` is a pointer to a pointer to a char, which is used as an input parameter. Renaming it to `input_ptr` indicates its purpose clearly.
+- `local_10` is a pointer to a char, used to store the result string. Renaming it to `result_str` describes its role in the function.

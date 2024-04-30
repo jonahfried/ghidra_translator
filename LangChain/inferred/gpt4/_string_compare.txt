@@ -1,9 +1,30 @@
-{
-  param_1 : string_1_ptr,
-  param_2 : string_2_ptr,
-  local_c : comparison_result
-}
+From the provided decompiled code, we can infer the purpose and types of the variables and parameters and give them more descriptive names based on their usage and context. Let's analyze each part:
 
-Reasoning:
-- `param_1` and `param_2` are pointers to strings, so `string_1_ptr` and `string_2_ptr` are descriptive names.
-- `local_c` is used to store the result of the comparison, so `comparison_result` is a concise and descriptive name.
+1. **Function Signature**:
+   - `int _string_compare(char **param_1, char **param_2)`
+   - **`param_1` and `param_2`**: These are double pointers to `char`, indicating that they likely point to strings. This is typical in C for handling string arrays or dynamic strings. Since this function compares two strings, we can rename these to `first_string_ptr` and `second_string_ptr` respectively.
+
+2. **Local Variable**:
+   - `int local_c;`
+   - This variable is used to store the result of the comparison or error codes. We can rename it to `comparison_result` to indicate its purpose.
+
+3. **Conditional Checks and Function Logic**:
+   - The function checks if either `param_1` or `param_2` is `NULL`. If both are `NULL`, it sets `local_c` to `0` (indicating they are equal in the sense of both being null). If only one is `NULL`, it prints an error message and sets `local_c` to `1` or `-1` depending on which is `NULL`. This indicates a sort of priority or ordering where a non-NULL string is considered 'greater' than a NULL one.
+   - When neither is `NULL`, it calls `_strcmp(*param_1, *param_2)` which suggests that `*param_1` and `*param_2` are the actual `char*` strings being compared. Thus, renaming `param_1` and `param_2` to reflect they are pointers to these strings is justified.
+
+4. **Standard Library Functions and Variables**:
+   - `_strcmp`, `_fprintf`, and `PTR____stderrp_10000a038`: These are standard library functions and a pointer to the standard error output stream. The names indicate their purpose clearly as per C standard library conventions.
+
+Mapping of the placeholder names to more descriptive names:
+```python
+{
+  "param_1" : "first_string_ptr",
+  "param_2" : "second_string_ptr",
+  "local_c" : "comparison_result"
+}
+```
+
+**Explanation of Reasoning**:
+- **`first_string_ptr` and `second_string_ptr`**: These names make it clear that the parameters are pointers to strings that will be compared.
+- **`comparison_result`**: This name reflects its role in storing the result of the string comparison or the error state (0 for equal, 1 or -1 for error states indicating which string was `NULL`).
+- The function itself is named `_string_compare`, which appropriately describes its purpose of comparing two strings.

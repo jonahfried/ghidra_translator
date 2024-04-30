@@ -1,0 +1,8 @@
+{
+  param_1 : pointer to long,
+  local_10 : result
+}
+
+Reasoning:
+- `param_1`: This parameter is a pointer to a long, which seems to be holding some string data. It's named `param_1` to indicate it's the first parameter of the function.
+- `local_10`: This variable is used to store the result of the function. It's named `local_10` as it's a local variable with a generic purpose.

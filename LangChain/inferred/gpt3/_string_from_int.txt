@@ -1,0 +1,10 @@
+{
+  param_1 : value_to_convert,
+  uVar1 : converted_string,
+  local_1c : formatted_string,
+  local_10 : stack_chk_guard_copy,
+}
+- `param_1` : This variable seems to contain the value that needs to be converted to a string. Renaming it to `value_to_convert` makes its purpose clearer.
+- `uVar1` : This variable appears to store the result of converting the integer value to a string. Renaming it to `converted_string` describes its content.
+- `local_1c` : This variable holds the formatted string created from the integer value. Renaming it to `formatted_string` reflects its purpose.
+- `local_10` : This variable seems to be a copy of the stack guard value for comparison later. Renaming it to `stack_chk_guard_copy` describes its purpose in the function.

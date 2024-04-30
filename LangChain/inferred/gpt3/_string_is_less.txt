@@ -1,0 +1,7 @@
+{
+  param_1 : first_string_address,
+  param_2 : second_string_address,
+  iVar1 : comparison_result,
+}
+- `param_1` and `param_2` are addresses to strings, hence `first_string_address` and `second_string_address` respectively.
+- `iVar1` seems to store the result of a comparison operation, so `comparison_result` is a suitable name.

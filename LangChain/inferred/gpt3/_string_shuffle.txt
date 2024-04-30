@@ -1,0 +1,15 @@
+{
+  param_1 : input_string,
+  cVar1 : temp_char,
+  iVar2 : random_index,
+  tVar3 : current_time,
+  uVar4 : string_length,
+  local_20 : index,
+}
+Reasoning:
+- `param_1`: This variable is a pointer to a string, representing the input string that needs to be shuffled.
+- `cVar1`: This variable is used as a temporary storage for a character during the shuffling process.
+- `iVar2`: This variable is used to store a random index generated for shuffling the characters in the string.
+- `tVar3`: This variable is used to store the current time, likely for seeding the random number generator.
+- `uVar4`: This variable is used to store the length of the input string.
+- `local_20`: This variable is used as an index for iterating through the string during shuffling.

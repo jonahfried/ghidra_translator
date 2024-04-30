@@ -1,0 +1,10 @@
+{
+  param_1 : string_ptr,
+  param_2 : start_index,
+  param_3 : erase_count,
+  local_20 : erase_length,
+}
+- `param_1` is used to store a pointer to a string object, so `string_ptr` is a descriptive name indicating it points to a string.
+- `param_2` is used as the start index for erasing characters in the string, so `start_index` is a clear name indicating its purpose.
+- `param_3` represents the count of characters to erase, so `erase_count` is a concise name reflecting its meaning.
+- `local_20` is used to store the length of characters to erase, so `erase_length` is a descriptive name indicating its purpose.

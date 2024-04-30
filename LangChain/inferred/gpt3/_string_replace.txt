@@ -1,0 +1,22 @@
+{
+  param_1: input_str,
+  param_2: old_str,
+  param_3: new_str,
+  pcVar1: old_str_ptr,
+  sVar2: old_str_len,
+  sVar3: new_str_len,
+  sVar4: remaining_str_len,
+  pcVar5: new_str_ptr,
+  pcVar6: new_allocated_str,
+}
+Reasoning:
+- `param_1`: Renamed to `input_str` since it represents the input string where replacements are made.
+- `param_2`: Renamed to `old_str` as it represents the string to be replaced.
+- `param_3`: Renamed to `new_str` as it represents the new string to replace `old_str`.
+- `pcVar1`: Renamed to `old_str_ptr` as it points to the location of `old_str` in `input_str`.
+- `sVar2`: Renamed to `old_str_len` as it stores the length of `old_str`.
+- `sVar3`: Renamed to `new_str_len` as it stores the length of `new_str`.
+- `sVar4`: Renamed to `remaining_str_len` as it calculates the length of the remaining string after `old_str`.
+- `pcVar5`: Renamed to `new_str_ptr` as it points to the location where `new_str` will be inserted.
+- `pcVar6`: Renamed to `new_allocated_str` as it represents the newly allocated memory for the modified `input_str`.
+}

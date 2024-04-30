@@ -1,0 +1,11 @@
+{
+  param_1 : string_data_ptr,
+  param_2 : substring,
+  sVar2 : substring_length,
+  local_9 : ends_with
+}
+
+- `param_1` is a pointer to the data of a string object, so `string_data_ptr` is a descriptive name.
+- `param_2` represents the substring we are checking for, so `substring` is a clear name.
+- `sVar2` is used to store the length of `param_2`, hence `substring_length` is a fitting name.
+- `local_9` is a boolean flag indicating whether the string ends with the substring, so `ends_with` is a suitable name.

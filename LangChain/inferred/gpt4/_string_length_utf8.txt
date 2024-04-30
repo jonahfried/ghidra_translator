@@ -1,12 +1,22 @@
+Here's the mapping of the placeholder variable names to more descriptive names, along with explanations for each:
+
+```json
 {
-  param_1 : input_str,
-  local_20 : utf8_length,
-  local_18 : current_char,
-  local_10 : result,
+  "param_1": "input_string",
+  "local_20": "character_count",
+  "local_18": "current_char_pointer",
+  "local_10": "result_length"
 }
-- `param_1` : Renamed to `input_str` as it represents the input string for which we are calculating the UTF-8 length.
-- `local_20` : Renamed to `utf8_length` as it accumulates the length of the UTF-8 characters in the input string.
-- `local_18` : Renamed to `current_char` as it represents the current character being processed in the loop.
-- `local_10` : Renamed to `result` as it stores the final calculated length of the UTF-8 characters in the input string.
-  
-These names provide clarity and context to the purpose of each variable in the function.
+```
+
+### Explanation:
+
+1. **param_1**: This parameter is a pointer to a char (character array), suggesting it's a string. The function's purpose, indicated by its name `_string_length_utf8`, is to compute the length of this string assuming UTF-8 encoding. Thus, `input_string` is a fitting descriptive name.
+
+2. **local_20**: This local variable is initialized to zero and incremented within a loop that iterates over each character of the string. It's incremented conditionally based on the UTF-8 encoding specifics (checking if a byte is not a continuation byte). This suggests it counts the number of UTF-8 characters (or code points), so `character_count` is an appropriate name.
+
+3. **local_18**: Initialized with `param_1` and used to traverse the string character by character until it hits the null character (`'\0'`), which marks the end of the string. It serves as a pointer to the current character being inspected in the string. Therefore, `current_char_pointer` is a suitable name.
+
+4. **local_10**: This variable is eventually returned by the function. It stores the result of the computation, which in this context is the length of the string in terms of UTF-8 characters (or code points). The name `result_length` accurately describes its role.
+
+These names improve the readability of the code by clearly indicating the role of each variable in computing the length of a UTF-8 encoded string.

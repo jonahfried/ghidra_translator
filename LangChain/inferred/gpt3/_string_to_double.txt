@@ -1,0 +1,10 @@
+{
+  param_1: string_array,
+  uVar1: string_length,
+  local_10: converted_double,
+}
+Reasoning:
+- `param_1`: The parameter `param_1` is a pointer to a string array, so `param_1` can be named as `string_array`.
+- `uVar1`: This variable is used to store the result of the function `_string_empty`, which seems to check if the string is empty. Naming it `string_length` because it likely represents the length of the string.
+- `local_10`: This variable is used to store the converted double value. Naming it `converted_double` to indicate that it holds the result of converting a string to a double.
+}

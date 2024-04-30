@@ -1,0 +1,10 @@
+{
+  param_1: output_string,
+  uVar1: result,
+  local_38: formatted_string,
+  local_10: stack_chk_guard_saved,
+}
+- `param_1` is the input parameter where the double value will be converted to a string.
+- `uVar1` seems to hold the result of the `_string_create` function, so `result` is a suitable name.
+- `local_38` is an array used to store the formatted string before creating the final string, hence `formatted_string`.
+- `local_10` appears to store the value of the stack guard before the function's execution, so `stack_chk_guard_saved` is a descriptive name.

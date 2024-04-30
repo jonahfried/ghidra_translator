@@ -1,10 +1,31 @@
+In the provided code snippet, we have a function `_string_is_less_or_equal` which takes two parameters and returns a boolean value based on the result of comparing these two parameters using another function `_string_compare`. Let's analyze the variables and parameters to infer their purpose and assign descriptive names:
+
+1. **param_1** and **param_2**:
+   - These are parameters to the function `_string_is_less_or_equal`.
+   - From the name of the function and its usage, it's evident that these parameters represent strings that are compared.
+   - The type `undefined8` suggests these are 64-bit values, likely pointers (to strings in this context).
+   - Thus, a more descriptive name for `param_1` could be `string1` and for `param_2` could be `string2`.
+
+2. **iVar1**:
+   - This is a local variable used to store the result of `_string_compare`.
+   - The `_string_compare` function, judging by its usage, likely returns an integer indicating the result of a string comparison (similar to `strcmp` in C, where the result is 0 if strings are equal, negative if the first string is less, and positive if the first string is greater).
+   - A more descriptive name for `iVar1` could be `compare_result`.
+
+3. **_string_compare**:
+   - This function is used to compare two strings.
+   - Given that it's used in a context to determine if one string is less than or equal to another, it likely behaves similar to the standard string comparison functions, returning an integer based on the lexicographical comparison of the strings.
+
+4. **return iVar1 < 1**:
+   - The function returns `true` if `compare_result` is less than 1. This covers both cases where `string1` is less than `string2` (negative result) or equal to `string2` (zero result).
+
+The mapping in the requested format is:
+
+```json
 {
-  param_1 : string1_address,
-  param_2 : string2_address,
-  iVar1 : comparison_result,
+  "param_1" : "string1",
+  "param_2" : "string2",
+  "iVar1" : "compare_result"
 }
-Reasoning:
-- `param_1`: It seems to be the address of the first string being compared.
-- `param_2`: It seems to be the address of the second string being compared.
-- `iVar1`: It holds the result of the comparison operation.
-- `comparison_result`: Describes the type of the variable `iVar1`, indicating that it holds the result of the comparison operation.
+```
+
+These inferred names provide a clearer understanding of the role each variable plays in the function, making the code more readable and maintainable.

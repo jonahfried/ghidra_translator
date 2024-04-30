@@ -1,0 +1,9 @@
+{
+  param_1 : str,
+  local_9 : is_bool,
+  iVar1 : comparison_result,
+}
+Explanation:
+- `param_1` is the input parameter representing a string. Renamed to `str` for clarity.
+- `local_9` is a variable used to store the boolean value converted from the input string. Renamed to `is_bool` to indicate it holds a boolean value.
+- `iVar1` is used to store the result of string comparisons. Renamed to `comparison_result` to convey its purpose.

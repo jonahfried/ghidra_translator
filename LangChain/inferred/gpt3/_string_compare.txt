@@ -1,0 +1,9 @@
+{
+  param_1 : string_1_ptr,
+  param_2 : string_2_ptr,
+  local_c : comparison_result
+}
+
+Reasoning:
+- `param_1` and `param_2` are pointers to strings, so `string_1_ptr` and `string_2_ptr` are descriptive names.
+- `local_c` is used to store the result of the comparison, so `comparison_result` is a concise and descriptive name.

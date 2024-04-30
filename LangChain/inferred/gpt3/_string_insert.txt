@@ -1,0 +1,14 @@
+{
+  param_1 : string_buffer,
+  param_2 : insertion_position,
+  param_3 : str_item,
+  sVar1 : str_item_length,
+  lVar2 : new_buffer_length,
+  lVar3 : new_buffer_address,
+}
+- `string_buffer`: Represents the buffer where the string is stored. It's more descriptive than `param_1`.
+- `insertion_position`: Describes the position where the `str_item` will be inserted.
+- `str_item`: Represents the string that will be inserted.
+- `str_item_length`: Describes the length of the `str_item`, which is obtained using `_strlen`.
+- `new_buffer_length`: Represents the new length of the buffer after insertion.
+- `new_buffer_address`: Represents the address of the newly allocated buffer if reallocation is needed.

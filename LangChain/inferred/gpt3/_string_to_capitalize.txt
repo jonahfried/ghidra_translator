@@ -1,0 +1,6 @@
+{
+  param_1 : string_ptr,
+  iVar1 : first_char_ascii,
+}
+- `param_1` is a pointer to a string, so `string_ptr` is a descriptive name.
+- `iVar1` is used to store the ASCII value of the first character of the string, so `first_char_ascii` is an appropriate name.

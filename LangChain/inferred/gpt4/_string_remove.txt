@@ -1,12 +1,39 @@
+From the provided decompiled code, I can infer meaningful names and their types based on their usage within the function. The function signature and the operations performed within the function provide good context for determining these names. Here’s the reasoning for each placeholder:
+
+1. `param_1`:
+   - **Type**: `char **`
+   - **Inferred Name**: `target_string_ptr`
+   - **Reasoning**: `param_1` is a pointer to a pointer of char, which typically indicates a mutable string in C. The function checks for null and dereferences it to manipulate the actual string, which suggests it points to a target string that might be altered.
+
+2. `param_2`:
+   - **Type**: `char *`
+   - **Inferred Name**: `substring`
+   - **Reasoning**: `param_2` is a pointer to char used in string operations like `strlen` and `strstr`. This, coupled with its usage context (searching within another string), strongly indicates it's a substring being removed from the main string.
+
+3. `sVar1`:
+   - **Type**: `size_t`
+   - **Inferred Name**: `substring_length`
+   - **Reasoning**: `sVar1` is used to store the result of `strlen(param_2)`, which is the length of the substring. It is used multiple times to calculate positions within the string, indicative of its role in size measurement.
+
+4. `sVar2`:
+   - **Type**: `size_t`
+   - **Inferred Name**: `remaining_length`
+   - **Reasoning**: `sVar2` is calculated as the length of the part of the main string (`*param_1`) after the substring. This value is used in `memmove` to adjust the string after removing the substring, representing the length of the remaining string.
+
+5. `local_28`:
+   - **Type**: `char *`
+   - **Inferred Name**: `current_position`
+   - **Reasoning**: `local_28` is initialized to the value pointed to by `*param_1` (the main string) and is modified in a loop with `strstr`, searching for the substring. This variable represents the current position in the main string where operations (like substring removal) are occurring.
+
+The mappings, therefore, are:
+```json
 {
-  param_1 : string_ptr,
-  param_2 : substring,
-  sVar1 : substring_length,
-  sVar2 : remaining_length,
-  local_28 : current_position,
+  "param_1": "target_string_ptr",
+  "param_2": "substring",
+  "sVar1": "substring_length",
+  "sVar2": "remaining_length",
+  "local_28": "current_position"
 }
-- `param_1` is a pointer to a string object, so `string_ptr` is a descriptive name.
-- `param_2` represents a substring, hence `substring` is a fitting name.
-- `sVar1` is used to store the length of the substring, hence `substring_length`.
-- `sVar2` is used to store the remaining length after removing the substring, hence `remaining_length`.
-- `local_28` seems to be used as a temporary variable to hold the current position, so `current_position` is an appropriate name.
+```
+
+These inferred names provide more clarity on the role that each variable plays in the function `_string_remove`, which is designed to remove all occurrences of a specified substring from a main string.

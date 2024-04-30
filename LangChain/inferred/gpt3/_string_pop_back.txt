@@ -1,0 +1,4 @@
+{
+  param_1 : string_buffer_ptr,
+}
+In this decompiled function `_string_pop_back`, the parameter `param_1` seems to be a pointer to a string buffer. We can infer this based on how it's being used - accessing elements, updating the length, and checking for emptiness. It makes sense to name it `string_buffer_ptr` to reflect its purpose in the function.

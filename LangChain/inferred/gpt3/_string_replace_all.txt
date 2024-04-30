@@ -1,0 +1,16 @@
+{
+  param_1 : string_ptr,
+  param_2 : substring,
+  param_3 : substring_length,
+  puVar1 : new_string_ptr,
+  pcVar2 : substring_ptr,
+  sVar3 : substring_length,
+  local_30 : current_position,
+}
+- `param_1` is a pointer to a string, so naming it `string_ptr` is descriptive and concise.
+- `param_2` is a substring that needs to be replaced, so naming it `substring` is appropriate.
+- `param_3` represents the length of the substring, so `substring_length` is a clear name for it.
+- `puVar1` seems to hold a pointer to a new string, so `new_string_ptr` describes its purpose.
+- `pcVar2` is used as a pointer to a substring during iteration, so `substring_ptr` is an appropriate name.
+- `sVar3` is used to store the length of the substring, hence `substring_length` is a fitting name.
+- `local_30` seems to be holding the current position in the string, so `current_position` is a suitable name.

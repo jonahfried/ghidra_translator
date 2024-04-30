@@ -1,0 +1,8 @@
+{
+  param_1 : string_ptr,
+  local_10 : result,
+}
+- `string_ptr` for `param_1`: The parameter `param_1` is a pointer to a string. Naming it `string_ptr` makes it clear that it points to a string.
+- `result` for `local_10`: The variable `local_10` stores the result of the function. Naming it `result` indicates its purpose in the function.
+  
+By using these names, the code becomes more readable and descriptive, aiding in understanding the function's functionality without needing to dive into the implementation details.

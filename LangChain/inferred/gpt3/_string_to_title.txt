@@ -1,0 +1,10 @@
+{
+  param_1 : string_ptr,
+  bVar1 : is_first_alpha,
+  iVar2 : char_val,
+  local_20 : index,
+}
+- `param_1`: Renamed to `string_ptr` because based on the context, it seems to be a pointer to a string object.
+- `bVar1`: Renamed to `is_first_alpha` because it is used to track if the current character is the first alphabet character encountered.
+- `iVar2`: Renamed to `char_val` because it is used to store the ASCII value of a character.
+- `local_20`: Renamed to `index` because it is used as an index in a loop.

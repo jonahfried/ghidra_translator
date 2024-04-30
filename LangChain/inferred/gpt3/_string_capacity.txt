@@ -1,0 +1,7 @@
+{
+  param_1: string_ptr,
+  local_10: capacity,
+}
+Reasoning:
+- `param_1` is a pointer to a string object, so `string_ptr` is a descriptive name to indicate that it holds the address of a string.
+- `local_10` seems to be storing the capacity of the string object, so `capacity` is a clear and concise name to represent this value.

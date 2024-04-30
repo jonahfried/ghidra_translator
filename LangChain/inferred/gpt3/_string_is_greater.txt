@@ -1,0 +1,9 @@
+{
+  param_1: str_1_addr,
+  param_2: str_2_addr,
+  iVar1: comparison_result,
+}
+Reasoning:
+- `param_1`: Represents the address of the first string being compared.
+- `param_2`: Represents the address of the second string being compared.
+- `iVar1`: Holds the result of the comparison operation, hence `comparison_result`.

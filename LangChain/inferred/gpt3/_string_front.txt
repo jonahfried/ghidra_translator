@@ -1,0 +1,7 @@
+{
+  param_1 : input_ptr,
+  local_10 : front_char,
+}
+Reasoning:
+- `param_1` is a pointer to an undefined type, used as input to the function. We infer the name `input_ptr` to indicate that it is a pointer to some input data.
+- `local_10` appears to store the result of extracting the front character from the input. We infer the name `front_char` to describe the purpose of this variable clearly.

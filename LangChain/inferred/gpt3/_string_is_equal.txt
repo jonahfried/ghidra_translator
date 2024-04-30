@@ -1,0 +1,8 @@
+{
+  param_1 : str1_address,
+  param_2 : str2_address,
+  iVar1 : comparison_result,
+}
+Reasoning:
+- `param_1` and `param_2` are likely addresses of strings being compared.
+- `iVar1` seems to hold the result of the comparison operation. It is used in the equality check, so `comparison_result` is a suitable name for it.

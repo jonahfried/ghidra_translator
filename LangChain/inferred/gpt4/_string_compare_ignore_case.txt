@@ -1,8 +1,62 @@
+In this function, `_string_compare_ignore_case`, various parameters and variables are used to implement a case-insensitive string comparison. Let's analyze each placeholder to provide a more descriptive name and explain the reasoning behind each.
+
+1. `param_1` and `param_2`: 
+   - These are parameters pointing to pointers of characters, essentially pointers to strings.
+   - More descriptive names: `string_ptr1` and `string_ptr2`.
+   - Reasoning: The names `string_ptr1` and `string_ptr2` indicate that these are pointers to strings (char pointers) which are the first and second strings being compared, respectively.
+
+2. `local_c`:
+   - This local variable stores the result of various comparisons.
+   - More descriptive name: `comparison_result`.
+   - Reasoning: The name `comparison_result` clearly indicates that this variable holds the outcome of the string comparison.
+
+3. `_strcasecmp`:
+   - A function used to compare two strings ignoring the case.
+   - Descriptive name change isn't required here as `_strcasecmp` is a standard function name in C for case-insensitive string comparison. It's typically understood by programmers familiar with C string handling functions.
+
+The complete updated mapping and function with descriptive names would then be:
+
+```c
+int _string_compare_ignore_case(char **string_ptr1, char **string_ptr2)
 {
-  param_1 : first_string_pointer,
-  param_2 : second_string_pointer,
-  local_c : comparison_result,
+  int comparison_result;
+  
+  if ((string_ptr1 == NULL) || (string_ptr2 == NULL)) {
+    if (string_ptr1 == string_ptr2) {
+      comparison_result = 0;
+    }
+    else {
+      comparison_result = 1;
+      if (string_ptr1 == NULL) {
+        comparison_result = -1;
+      }
+    }
+  }
+  else if ((*string_ptr1 == NULL) || (*string_ptr2 == NULL)) {
+    if (*string_ptr1 == *string_ptr2) {
+      comparison_result = 0;
+    }
+    else {
+      comparison_result = 1;
+      if (*string_ptr1 == NULL) {
+        comparison_result = -1;
+      }
+    }
+  }
+  else {
+    comparison_result = _strcasecmp(*string_ptr1, *string_ptr2);
+  }
+  return comparison_result;
 }
-Reasoning:
-- `param_1` and `param_2` are pointers to strings, so `first_string_pointer` and `second_string_pointer` are more descriptive.
-- `local_c` stores the result of the comparison, so `comparison_result` is a concise and clear name.
+```
+
+The mapping would be:
+```json
+{
+  "param_1": "string_ptr1",
+  "param_2": "string_ptr2",
+  "local_c": "comparison_result"
+}
+```
+
+This naming provides clear, context-specific insights into the role of each variable and parameter in the function, enhancing readability and maintainability.

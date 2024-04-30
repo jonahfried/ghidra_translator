@@ -1,0 +1,14 @@
+{
+  param_1 : string_ptr,
+  param_2 : characters_to_trim,
+  pcVar1 : found_char_ptr,
+  bVar2 : is_char_found,
+  local_28 : end_ptr,
+  local_20 : start_ptr,
+}
+- `param_1`: Renamed to `string_ptr` since it seems to be a pointer to a string.
+- `param_2`: Renamed to `characters_to_trim` to indicate that it contains the characters that need to be trimmed from the string.
+- `pcVar1`: Renamed to `found_char_ptr` to indicate that it holds a pointer to a found character.
+- `bVar2`: Renamed to `is_char_found` to indicate that it is a boolean flag indicating whether a character is found or not.
+- `local_28`: Renamed to `end_ptr` as it seems to be pointing to the end of a range.
+- `local_20`: Renamed to `start_ptr` as it seems to be pointing to the start of a range.

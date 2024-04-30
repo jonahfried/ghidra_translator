@@ -1,0 +1,9 @@
+{
+  param_1 : input_string,
+  sVar1 : conversion_result,
+  local_10 : unicode_string,
+} 
+
+- `param_1` is the input string, hence `input_string`.
+- `sVar1` is the result of the conversion from multibyte string to wide character string, hence `conversion_result`.
+- `local_10` stores the resulting unicode string, hence `unicode_string`.

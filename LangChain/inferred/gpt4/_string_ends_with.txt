@@ -1,11 +1,30 @@
-{
-  param_1 : string_data_ptr,
-  param_2 : substring,
-  sVar2 : substring_length,
-  local_9 : ends_with
-}
+From the provided Ghidra decompiled code, we can infer the purpose and nature of the variables based on their usage within the function `_string_ends_with`. The function aims to check if the string represented by `param_1` ends with the substring `param_2`. Below is the mapping for the placeholder names to more descriptive, concise names based on their roles and data types:
 
-- `param_1` is a pointer to the data of a string object, so `string_data_ptr` is a descriptive name.
-- `param_2` represents the substring we are checking for, so `substring` is a clear name.
-- `sVar2` is used to store the length of `param_2`, hence `substring_length` is a fitting name.
-- `local_9` is a boolean flag indicating whether the string ends with the substring, so `ends_with` is a suitable name.
+```json
+{
+  "param_1": "string_object_ptr",
+  "param_2": "substring",
+  "iVar1": "comparison_result",
+  "sVar2": "substring_length",
+  "local_9": "ends_with_substring"
+}
+```
+
+**Explanation of inferred names:**
+
+1. **`param_1`**: Named as `string_object_ptr`:
+   - This parameter is a pointer to a long, which from context seems to be a pointer to a structure or complex data type representing a string (likely a custom string object). The function checks if this pointer itself is NULL and also dereferences it to check the content, indicating it might point to a dynamically allocated structure or array.
+
+2. **`param_2`**: Named as `substring`:
+   - This is a straightforward char pointer used directly in string-related functions (`_strlen`, `_strncmp`), indicating it is a regular C-style string.
+
+3. **`iVar1`**: Named as `comparison_result`:
+   - This integer variable is used to store the result of `_strncmp`, which compares two strings. Hence, the name `comparison_result` reflects its purpose.
+
+4. **`sVar2`**: Named as `substring_length`:
+   - This variable is assigned the result of `_strlen(param_2)`, which returns the length of the substring. Thus, `substring_length` is an apt descriptive name.
+
+5. **`local_9`**: Named as `ends_with_substring`:
+   - This boolean variable ultimately holds the value returned by the function, which indicates whether the `string_object_ptr`'s string ends with `substring`. The name `ends_with_substring` directly reflects this role.
+
+With these names, the function and its operations become much clearer to any developer or code maintainer reading the code.

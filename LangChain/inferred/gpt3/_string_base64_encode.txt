@@ -1,0 +1,13 @@
+{
+  param_1: input_pointer,
+  local_30: index_counter,
+  local_28: bit_shift_counter,
+  local_24: temp_value,
+  local_10: encoded_string,
+}
+Reasoning:
+- `param_1`: It is a pointer to the input data, likely a string or byte array.
+- `local_30`: It is used as a counter for iterating over the input data.
+- `local_28`: It is used as a counter for tracking the number of bits shifted.
+- `local_24`: It is a temporary variable to store calculated values during encoding.
+- `local_10`: It stores the encoded string that will be returned.

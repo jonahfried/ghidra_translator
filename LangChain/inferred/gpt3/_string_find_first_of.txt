@@ -1,0 +1,12 @@
+{
+  param_1 : string_data_ptr,
+  param_2 : search_char_ptr,
+  param_3 : search_start_index,
+  pcVar1 : found_char_ptr,
+  local_c : result_index,
+}
+- `param_1`: Renamed to `string_data_ptr` as it seems to be a pointer to some string data.
+- `param_2`: Renamed to `search_char_ptr` as it seems to be a pointer to a character to search for.
+- `param_3`: Renamed to `search_start_index` as it seems to be an index indicating where to start the search.
+- `pcVar1`: Renamed to `found_char_ptr` as it seems to be a pointer to a found character.
+- `local_c`: Renamed to `result_index` as it appears to store the index of the found character or -1 if not found.

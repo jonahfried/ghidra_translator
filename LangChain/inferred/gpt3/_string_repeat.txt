@@ -1,0 +1,16 @@
+{
+  param_1 : string_info_ptr,
+  param_2 : repeat_count,
+  puVar1 : repeated_string,
+  local_40 : loop_counter,
+  local_38 : repeated_string_ptr,
+  local_10 : result,
+}
+- `param_1` : The parameter seems to be a pointer to some information related to a string.
+- `param_2` : This parameter represents the count of times the string should be repeated.
+- `puVar1` : It seems to be a pointer to the allocated memory for the repeated string.
+- `local_40` : This variable is used as a counter in a loop.
+- `local_38` : It appears to be a pointer to the repeated string within the function scope.
+- `local_10` : This variable is used to store the result of the function and seems to be of type `undefined8`.
+  
+The chosen names aim to be descriptive and reflect the purpose and type of each variable based on the context provided by the function.

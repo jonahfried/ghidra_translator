@@ -1,0 +1,8 @@
+{
+  param_1: string_buffer,
+  param_2: start_index,
+  param_3: end_index,
+}
+- `string_buffer`: The parameter `param_1` seems to be a pointer to a string buffer, so it can be named `string_buffer`.
+- `start_index`: `param_2` is used to represent the starting index of the range to be removed, so `start_index` is a suitable name for it.
+- `end_index`: `param_3` is used to represent the ending index of the range to be removed, so `end_index` is a fitting name for it.
