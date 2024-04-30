@@ -1266,7 +1266,6 @@ gpt3,_string_to_bool_from_cstr,local_9,isBool,
 gemini,_string_to_bool_from_cstr,param_1,stringToConvert,boolstr
 claud,_string_to_bool_from_cstr,param_1,boolStr,boolstr
 gpt3,_string_to_bool_from_cstr,param_1,str,boolstr
-gemini,_string_to_capitalize,**param_1,firstChar,
 gemini,_string_to_capitalize,PTR____stderrp_10000a038,stderrStream,
 claud,_string_to_capitalize,iVar1,capitalizedChar,
 gpt3,_string_to_capitalize,iVar1,firstCharAscii,
@@ -1494,7 +1493,6 @@ gpt4,_string_assign,param_2,new_string,newStr
 gpt4,_string_assign,sVar1,new_string_length,newStrLength
 gpt4,_string_assign,lVar2,new_memory_address,newData
 gpt4,_string_assign,PTR____stderrp_10000a038,stderr_file_pointer,
-gpt4,_string_assign,*param_1,string_data,
 gpt4,_string_assign,param_1[1],current_string_length,
 gpt4,_string_assign,param_1[2],allocated_size,
 gpt4,_string_assign,param_1[3],memory_pool_handle
@@ -1532,7 +1530,6 @@ gpt4,_string_push_back,param_1,string_struct_ptr,str
 gpt4,_string_push_back,param_2,char_to_append,chItem
 gpt4,_string_push_back,lVar1,current_capacity,newCapacity
 gpt4,_string_push_back,lVar2,new_memory_address,newData
-gpt4,_string_push_back,*param_1,string_data_ptr,
 gpt4,_string_push_back,param_1[1],string_length,
 gpt4,_string_push_back,param_1[2],string_capacity,
 gpt4,_string_push_back,param_1[3],memory_pool_id
@@ -1768,7 +1765,6 @@ gpt4,_string_trim,PTR____stderrp_10000a038,ptr_stderr
 gpt4,_string_rbegin,param_1,string_struct_ptr,str
 gpt4,_string_rbegin,local_10,last_char_address,
 gpt4,_string_rbegin,PTR____stderrp_10000a038,stderr_ptr,
-gpt4,_string_rbegin,FILE **,file_stream_ptr
 gpt4,_string_to_float,param_1,string_ptr,str
 gpt4,_string_to_float,uVar1,is_empty_result,
 gpt4,_string_to_float,dVar2,converted_double,
