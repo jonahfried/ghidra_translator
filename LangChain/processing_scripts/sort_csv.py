@@ -1,7 +1,7 @@
 import csv
 
 # Open the mappings.csv file
-with open('mappings.csv', 'r') as file:
+with open('../mappings.csv', 'r') as file:
   # Read the CSV data
   csv_data = csv.reader(file)
   
